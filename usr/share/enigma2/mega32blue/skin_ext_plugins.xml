@@ -1,43 +1,64 @@
 <skin>
 <!-- ########### EXTERNAL PLUGINS AND EGAMI ############ -->
 
-	<!-- AutoTimer Help Plugin OKK -->
-	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
+	<!-- MPHelp OKK -->
+	<screen name="MPHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
 		<panel name="GenericLayoutFullTemplate" />
 		<panel name="4ButtonsW" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
-		<widget name="detailtext" position="60,100"  size="520,514" zPosition="10" font="Regular;20" halign="left" valign="center" foregroundColor="bluette" transparent="1"/>
+    <widget source="title" render="Label" position="60,100" size="520,60" zPosition="3" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+    <widget name="detailtext" position="60,160" size="520,454" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
 		<!-- eLabel name="DEBUG"  text="PANEL P001" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-	
+
+	<!-- AutoTimer PreView Plugin OKK -->
+	<screen name="AutoTimerPreview" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplateW" />
+		<panel name="4ButtonsW" />
+		<widget source="timerlist" render="Listbox" position="60,90" size="730,510" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos=(2,2), size=(550,24), text = 3, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(2,26), size=(555,30), text = 0, font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(2,50), size=(400,20), text = 4, font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(330,50), size=(203,20), text = 2, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+					],
+				 "fonts": [gFont("Regular", 20),gFont("Regular", 18)],
+				 "itemHeight": 72
+				}
+			</convert>
+		</widget>
+	<!-- eLabel name="DEBUG"  text="PANEL P002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+		
 	<!-- AutoTimer OverView Plugin OKK -->
 	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="GenericLayoutFullTemplate" />
 		<panel name="4ButtonsW" />
+		<panel name="menuHelp" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
-		<widget name="entries" position="80,100" size="520,514" scrollbarMode="showOnDemand" transparent="1" />
-		<ePixmap position="1126,20" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu1.png" transparent="1" alphatest="on" />
-		<!-- eLabel name="DEBUG"  text="PANEL P002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<widget name="entries" position="60,100" size="520,514" scrollbarMode="showOnDemand" transparent="1" />
+		<!-- eLabel name="DEBUG"  text="PANEL P003" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoTimer Editor Plugin OKK -->
 	<screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="GenericLayoutFullTemplate" />
-		<panel name="descTemplateLite" />
+		<panel name="GenericLayoutFullTemplateW"/>
+		<panel name="descTemplateLite"/>
 		<panel name="4ButtonsW" />
-		<widget name="config" position="60,100" size="520,490" scrollbarMode="showOnDemand" transparent="1" />
-		<widget source="help" render="Label" position="900,430" size="340,120" font="Regular;20" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="10" />
-		<!-- eLabel name="DEBUG"  text="PANEL P003" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<widget name="config" position="60,100" zPosition="2" size="730,510" scrollbarMode="showOnDemand" itemHeight="50" transparent="1"/>
+		<widget source="help" render="Label" position="840,465" size="400,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P004" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoTimer Settings Plugin OKK -->
 	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="GenericLayoutFullTemplate" />
+		<panel name="GenericLayoutFullTemplateW" />
 		<panel name="2ButtonsW" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
-		<widget name="config" position="60,100" size="520,414" scrollbarMode="showOnDemand" transparent="1" />
-		<widget source="help" render="Label" position="60,590"  size="520,80" zPosition="10" font="Regular;20" halign="left" backgroundColor="#101010" foregroundColor="bluette" transparent="1"/>
-		<!-- eLabel name="DEBUG"  text="PANEL P004" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<widget name="config" position="60,100" zPosition="2" size="730,510" scrollbarMode="showOnDemand" itemHeight="50" transparent="1"/>
+		<widget source="help" render="Label" position="840,465" size="400,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P005" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoTimer Importer Plugin OKK -->
@@ -46,7 +67,7 @@
 		<panel name="2ButtonsW" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="list" position="60,100" size="515,514" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P005" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P006" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoTimer Filter Plugin OKK -->
@@ -55,7 +76,7 @@
 		<panel name="4ButtonsW" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="520,414" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P006" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P007" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoTimer Service Plugin OKK -->
@@ -64,7 +85,31 @@
 		<panel name="4ButtonsW" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="515,414" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P007" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P0098" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- AutoTimer Wizard OKK -->
+	<screen name="AutoTimerWizard" position="0,0" size="1280,720" title="AutoTimer wizard" backgroundColor="black" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplateW"/>
+		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
+		<eLabel text="AutoTimer wizard" position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" >
+				<convert type="StringList" />
+			</widget>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
+		<widget name="wizard" position="0,0" size="0,0"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P009" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- IMDB Plugin OKK -->
@@ -82,7 +127,7 @@
 		<widget name="starsbg"      position="180,230" size="210,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on" />
 		<widget name="stars"        position="180,230" size="210,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1" />
 		<widget name="ratinglabel"  position="400,230" size="330,24" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
-		<!-- eLabel name="DEBUG"  text="PANEL P007" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- CronTimers Screen OKK -->
@@ -99,7 +144,7 @@
 		<widget source="list" render="Listbox" position="60,230" size="520,414" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList" />
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P009" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P011" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ########### AutoBouquet Maker ############ -->
@@ -112,7 +157,7 @@
 		<widget name="config" position="60,100" size="520,230" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="description" position="60,520" size="520,200" font="Regular;20" halign="center" foregroundColor="#538eff" transparent="1" zPosition="2" />
 		<widget name="pleasewait" position="60,620" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" />
-		<!-- eLabel name="DEBUG"  text="PANEL P010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P012" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker ProviderSetup OKK -->
@@ -123,7 +168,7 @@
 		<widget name="config" position="60,100" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="description" position="60,520" size="520,200" font="Regular;20" halign="center" foregroundColor="#538eff" transparent="1" zPosition="2" />
 		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" />
-		<!-- eLabel name="DEBUG"  text="PANEL P011" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P013" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker Menu OKK -->
@@ -141,7 +186,7 @@
 				}
 			</convert>
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P012" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P014" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker Ordering OKK -->
@@ -160,7 +205,7 @@
 			</convert>
 		</widget>
 		<widget name="pleasewait" position="60,620" size="520,140" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P013" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P015" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker HideSection OKK -->
@@ -180,7 +225,7 @@
 				}
 			</convert>
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P014" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P016" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker PanelConfig OKK -->
@@ -198,7 +243,7 @@
 				}
 			</convert>
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P015" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P017" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker KeepsBouquets OKK -->
@@ -218,7 +263,7 @@
 				}
 			</convert>
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P016" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P018" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker CrossEPG OKK -->
@@ -227,7 +272,7 @@
 		<widget name="action" halign="center" valign="center" position="65,10" size="520,20" font="Regular;18" backgroundColor="#11404040" transparent="1" />
 		<widget name="status" halign="center" valign="center" position="65,35" size="520,20" font="Regular;18" backgroundColor="#11000000" transparent="1" />
 		<widget name="progress" position="65,55" size="520,5" borderWidth="1" backgroundColor="#11000000"/>
-		<!-- eLabel name="DEBUG"  text="PANEL P017" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P019" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker Log OKK -->
@@ -235,7 +280,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="list" position="60,100" size="520,520" font="Regular;20" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P018" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P020" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquet Maker About OKK -->
@@ -244,7 +289,7 @@
 		<panel name="1Buttons" />
 		<widget name="about" position="60,100" size="520,500" font="Regular;20" transparent="1" />
 		<widget name="oealogo" position="940,460" size="200,135" zPosition="4" transparent="1" alphatest="blend" />
-		<!-- eLabel name="DEBUG"  text="PANEL P019" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P021" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- ########### Cross EPG ############ -->
@@ -255,7 +300,7 @@
 		<panel name="2Buttons" />
 		<widget name="config" position="60,90" itemHeight="30" size="520,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
 		<widget name="information" position="620,400" size="600,200" halign="center" valign="center" font="Regular;22" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P020" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P022" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- CrossEPG Menu OKK -->
@@ -276,7 +321,7 @@
 		</widget>	
 		<eLabel text="Exit" zPosition="5" position="100,667" size="210,40" halign="left" font="Regular;20" transparent="1" backgroundColor="black" />
 		<eLabel text="Save" zPosition="5" position="340,667" size="210,40" halign="left" font="Regular;20" transparent="1" backgroundColor="black" />
-		<!-- eLabel name="DEBUG"  text="PANEL P021" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P023" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- CrossEPG Providers OKK -->
@@ -296,7 +341,7 @@
 			</convert>
 		</widget>
 		<ePixmap position="770,90" zPosition="4" size="10,510" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P022" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P024" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- CrossEPG Order List OKK -->
@@ -315,7 +360,7 @@
 				}
 			</convert>
 		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL P023" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P025" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- CrossEPG Information OKK -->
@@ -338,7 +383,7 @@
 		<widget name="channels_count"     position="60,480" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 		<widget name="events_count"       position="60,510" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 		<widget name="hashes_count"       position="60,540" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P024" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P026" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- CrossEPG About OKK -->
@@ -347,7 +392,7 @@
 		<panel name="1Buttons" />
 		<ePixmap pixmap="mega32/menu/ico_crossepg.png" position="940,455" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="about" position="60,100" size="740,560" font="Regular;20" backgroundColor="black" transparent="1" zPosition="4" />
-		<!-- eLabel name="DEBUG"  text="PANEL P025" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P027" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 
@@ -358,7 +403,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="menu" position="60,90" size="520,450" scrollbarMode="showOnDemand" zPosition="5" backgroundColor="transpBlack" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P026" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P028" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- CCcam General Info OKK -->
@@ -366,7 +411,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="text" position="60,90" size="520,420" font="Regular;20" backgroundColor="transpBlack" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P027" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P029" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!--  CCcam Client Info OKK -->
@@ -375,7 +420,7 @@
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="info" position="640,370" size="500,340" font="Regular;20" foregroundColor="bluette" backgroundColor="transpBlack" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P028" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P030" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  CCcam Server Menu OKK -->
@@ -384,7 +429,7 @@
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="info" position="640,370" size="500,340" font="Regular;20" foregroundColor="bluette" backgroundColor="transpBlack" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P029" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P031" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
  	</screen>
  
 	<!--  CCcam Share View OKK -->
@@ -397,7 +442,7 @@
  		<widget name="providers" position="640,560" size="260,25" font="Regular;24" transparent="1" foregroundColor="bluette" backgroundColor="black" />
  		<widget name="reshare"   position="640,590" size="260,25" font="Regular;24" transparent="1" backgroundColor="black" />
 		<widget name="title"     position="60,620"  size="520,25" halign="left" font="Regular;20" zPosition="4" foregroundColor="yellow" backgroundColor="black" transparent="1" />	
-		<!-- eLabel name="DEBUG"  text="PANEL P030" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P032" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
  
 	<!--  CCcam Remote Box Info OKK -->
@@ -406,7 +451,7 @@
 		<panel name="4Buttons" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P031" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P033" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
  
 	<!--  CCcam Info Shared OKK -->
@@ -415,7 +460,7 @@
 		<panel name="4Buttons" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P032" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P034" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  CCcam Ecm Info Selection OKK -->
@@ -423,7 +468,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P033" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P035" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
  	</screen>
 
 	<!--  CCcam Ecm Info Config Menu OKK -->
@@ -431,7 +476,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="config" position="60,90" size="520,160" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P034" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P036" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
  	</screen>
 
 	<!--  CCcam Ecm Info SubMenu OKK -->
@@ -440,7 +485,7 @@
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,250" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="info" position="640,400" size="645,165" font="Regular;20" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P035" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P037" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  CCcam Ecm Info Selection OKK -->
@@ -448,7 +493,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P036" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P038" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  CCcam Info Config Menu OKK -->
@@ -457,7 +502,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P037" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P039" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  CCcam Info Config Switcher OKK -->
@@ -466,7 +511,7 @@
 		<panel name="GenericLayoutFullTemplate" />
 		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend" />
 		<widget name="list" position="60,90" size="515,500" scrollbarMode="showOnDemand" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P038" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P040" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  Samba Setup OKK -->
@@ -480,7 +525,7 @@
 		<widget name="labstop"   position="240,170" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"    position="240,170" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
 		<ePixmap position="540,45" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend" />
-		<!-- eLabel name="DEBUG"  text="PANEL P039" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P041" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  FTP Setup OKK -->
@@ -492,7 +537,7 @@
 		<widget name="lab2"      position="60,170"  size="150,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1" />
 		<widget name="labstop"   position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"    position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P040" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P042" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  AFP Setup OKK -->
@@ -505,7 +550,7 @@
 		<widget name="lab2"      position="60,170"  size="200,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1" />
 		<widget name="labstop"   position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"    position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P041" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P043" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  OpenVpn Setup OKK -->
@@ -518,7 +563,7 @@
 		<widget name="lab2"      position="60,170"  size="200,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1" />
 		<widget name="labstop"   position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"    position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P042" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P044" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- NetWork NFS Setup OKK -->
@@ -531,7 +576,7 @@
 		<widget name="lab2"      position="60,170"  size="200,30" font="Regular;22" valign="center" foregroundColor="#73c6ff" backgroundColor="#101010" transparent="1"/>
 		<widget name="labstop"   position="260,170" size="200,30" font="Regular;22" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun"    position="260,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P043" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P045" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  OpenVpn Log OKK -->
@@ -539,7 +584,7 @@
 		<panel name="GenericLayoutFullTemplateW" />
 		<widget name="infotext" position="60,90" size="730,500" font="Regular;18" halign="center" backgroundColor="#101010" transparent="1" />
 		<ePixmap pixmap="mega32/menu/ico_info.png" position="940,455" size="256,256" zPosition="2" alphatest="blend" />
-		<!-- eLabel name="DEBUG"  text="PANEL P044" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P046" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  NetworkMiniDLNA OKK -->
@@ -573,7 +618,7 @@
 		<widget name="dlnainactive"    position="300,550" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="dlnaactive"      position="300,550" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on" />
 		<ePixmap position="540,45" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend" />
-		<!-- eLabel name="DEBUG"  text="PANEL P045" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P047" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  NetworkMiniDLNA Menu OKK -->
@@ -583,7 +628,7 @@
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="520,414" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="HelpWindow" position="620,500" zPosition="5" size="1,1" transparent="1" alphatest="on" />	
-		<!-- eLabel name="DEBUG"  text="PANEL P046" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P048" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Inadyn Setup OKK -->
@@ -610,7 +655,7 @@
 		<widget name="system"      position="120,374" size="100,30" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="labsys"      position="250,374" size="310,30" font="Regular;20" valign="center" backgroundColor="#274D5375"/>
 		<ePixmap position="540,45" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend" zPosition="4" />
-		<!-- eLabel name="DEBUG"  text="PANEL P047" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P049" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Inadyn Menu OKK -->
@@ -620,7 +665,7 @@
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="520,414" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="HelpWindow" position="620,500" zPosition="5" size="1,1" transparent="1" alphatest="on" />
-		<!-- eLabel name="DEBUG"  text="PANEL P048" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P050" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- uShare Setup OKK -->
@@ -657,7 +702,7 @@
 		<widget name="dlnainactive" position="300,560" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="dlnaactive" position="300,560" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on" />
 		<ePixmap position="1126,20" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="on" />
-		<!-- eLabel name="DEBUG"  text="PANEL P049" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P051" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- uShare Setup OKK -->
@@ -669,7 +714,7 @@
 		<widget name="lab2" position="60,170" size="150,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1" />
 		<widget name="labstop" position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"  position="240,170" size="200,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<!-- eLabel name="DEBUG"  text="PANEL P050" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P052" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- SABnzbd Setup OKK -->
@@ -682,7 +727,7 @@
 		<widget name="lab2"      position="60,170"  size="150,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1" />
 		<widget name="labstop"   position="240,170" size="200,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun"    position="240,170" size="200,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<!-- eLabel name="DEBUG"  text="PANEL P051" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P053" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- BlueTooth Device Manager Setup OKK -->
@@ -692,7 +737,7 @@
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="devicelist" position="60,90"  size="730,300" foregroundColor="#ffffff" zPosition="10" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="ConnStatus" position="60,420" size="730,150" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL P052" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P054" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!--  File Transcoding Setup OKK -->

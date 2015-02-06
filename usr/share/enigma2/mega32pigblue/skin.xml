@@ -1696,13 +1696,13 @@
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Network wizard" backgroundColor="black" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
-		<eLabel text="Network wizard" position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
+		<eLabel text="Network wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,400" render="Listbox" scrollbarMode="showOnDemand" size="730,200" source="list" transparent="1">
-			<convert type="StringList"/>
-		</widget>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
+				<convert type="StringList" />
+			</widget>
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="120,220" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1721,12 +1721,12 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="Video Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="230,175" size="500,300" font="Regular;24" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,440" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1">
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,440" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1735,8 +1735,8 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S087" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1744,13 +1744,13 @@
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." backgroundColor="black" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
-		<eLabel text=" Config Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="230,175" size="500,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,480" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1">
+		<eLabel text=" Config Wizard..." position="230,125" size="540,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
+		<widget name="text" position="230,175" size="500,400" font="Regular;20" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,500" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,480" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,460" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1759,8 +1759,8 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S088" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1769,12 +1769,12 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="SatLists Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="230,175" size="500,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1">
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1783,8 +1783,8 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S089" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1793,12 +1793,12 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="Image Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="230,175" size="500,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1">
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1807,8 +1807,8 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="white" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S090" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1817,12 +1817,12 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="Default Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="60,240" size="740,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,270" source="list" transparent="1">
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1831,8 +1831,8 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S091" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1841,12 +1841,12 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="Package Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
-		<widget name="text" position="230,240" size="500,200" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1">
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
+			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
@@ -1855,15 +1855,15 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowup.png" zPosition="11" alphatest="on"/>
-		<ePixmap alphatest="blend" pixmap="mega32/buttons/key_red.png" position="60,650" size="30,30"/>
-		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1"/>
+		<ePixmap position="60,660" size="30,30" pixmap="mega32/buttons/key_red.png" alphatest="blend"/>
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S092" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Tutorial Wizard OKK -->
  	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Tutorial Wizard..." backgroundColor="black"  flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
-		<widget name="text" position="60,90" size="730,300" font="Regular;23" transparent="1"/>
+		<widget name="text" position="60,90" size="730,300" font="Regular;22" transparent="1"/>
 		<widget name="list" position="60,370" zPosition="1" size="730,200"/>
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>

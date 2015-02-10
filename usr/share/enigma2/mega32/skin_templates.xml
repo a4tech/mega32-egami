@@ -540,23 +540,19 @@
 			<convert type="MenuEntryCompare">tv_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-User interface" position="610,384" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-User interface / Language" position="610,412" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Language" position="610,412" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Network / Time Settings" position="610,440" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Network" position="610,440" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Subtitle settings" position="610,468" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Time settings" position="610,468" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
-			<convert type="MenuEntryCompare">system_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="FixedLabel" text="-Subtitle settings" position="610,496" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Hdmi CEC" position="610,496" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -564,11 +560,11 @@
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Keyboard setup" position="610,552" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Keyboard / Remote" position="610,552" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Fan control 2" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Fan control" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1087,123 +1083,164 @@
 
 	<!-- Buttons Template -->
 	<screen name="4Buttons">
-		<!-- BoxSet ButtonColors -->
-		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="580,668" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="820,668" size="210,21" name="key_blue"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="580,668" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="820,668" size="210,21" name="key_blue"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 	</screen>
 
 	<screen name="4Buttons2">
-		<!-- BoxSet ButtonColors -->
-		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="580,668" size="210,21" name="yellow" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="820,668" size="210,21" name="blue"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" name="yellow" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="820,668" size="210,21" name="blue"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 	</screen>
 
 	<screen name="4Buttons3">
-		<!-- BoxSet ButtonColors -->
-		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" source="red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="340,668" size="210,21" source="green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="580,668" size="210,21" source="yellow" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="820,668" size="210,21" source="blue" render="Label"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" source="yellow" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="820,668" size="210,21" source="blue" render="Label"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+
+	<screen name="4Buttons4">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="key_red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="key_green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" source="key_yellow" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="820,668" size="210,21" source="key_blue" render="Label"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 	</screen>
 
 	<screen name="3Buttons">
-		<ePixmap position="50,659" size="900,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="580,668" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
+		<ePixmap position="50,659" size="900,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="580,668" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 	</screen>
 
 	<screen name="3Buttons2">
-		<ePixmap position="50,659" size="900,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="580,668" size="210,21" name="yellow" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="50,659" size="900,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" name="yellow" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 	</screen>
 
+	<screen name="3Buttons3">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" source="yellow" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
+	<screen name="3Buttons4">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/3colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="key_red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="key_green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="580,668" size="210,21" source="key_yellow" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
 	<screen name="2Buttons">
-		<ePixmap position="50,659" size="600,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
+		<ePixmap position="50,659" size="600,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 	</screen>
 
 	<screen name="2Buttons2">
-		<ePixmap position="50,659" size="600,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="50,659" size="600,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" name="green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 	</screen>
 
+	<screen name="2Buttons3">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
+	<screen name="2Buttons4">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/2colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="key_red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget position="340,668" size="210,21" source="key_green" render="Label"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
 	<screen name="1Buttons">
-		<ePixmap position="50,659" size="300,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="key_red" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
+		<ePixmap position="50,659" size="300,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="key_red" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 	</screen>
 
 	<screen name="1Buttons2">
-		<ePixmap position="50,659" size="300,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend" />
-		<widget position="100,668" size="210,21" name="red"     font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="50,659" size="300,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" name="red"     font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 	</screen>
 
+	<screen name="1Buttons3">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
+	<screen name="1Buttons4">
+		<ePixmap position="50,659" size="1200,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend"/>
+		<widget position="100,668" size="210,21" source="key_red" render="Label" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
+	</screen>
+	
 	<!-- ButtonsW Templates -->
 	<screen name="4ButtonsW">
-		<ePixmap  pixmap="mega32/buttons/4colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1" />
-		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
-		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
-		<widget source="key_yellow" render="Label"  position="580,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
+		<ePixmap  pixmap="mega32/buttons/4colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<widget source="key_yellow" render="Label"  position="580,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 		<widget source="key_blue"   render="Label"  position="820,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="3ButtonsW">
-		<ePixmap  pixmap="mega32/buttons/3colors.png" position="50,659" size="900,50" zPosition="4" alphatest="blend" transparent="1" />
-		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
-		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
-		<widget source="key_yellow" render="Label"  position="580,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
+		<ePixmap  pixmap="mega32/buttons/3colors.png" position="50,659" size="900,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<widget source="key_yellow" render="Label"  position="580,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="2ButtonsW">
-		<ePixmap  pixmap="mega32/buttons/2colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1" />
-		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
-		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
+		<ePixmap  pixmap="mega32/buttons/2colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<widget source="key_green"  render="Label"  position="340,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="1ButtonsW">
-		<ePixmap  pixmap="mega32/buttons/1colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1" />
-		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1" />
+		<ePixmap  pixmap="mega32/buttons/1colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<widget source="key_red"    render="Label"  position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="menuHelp">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Menu - Help" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Menu - Help" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
 	<screen name="menuList">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Menu - List" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Menu - List" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
 	<screen name="menuOption">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Menu - Opt." position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Menu - Opt." position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
-	
+		
 	<screen name="menuInfo">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Menu - Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Menu - Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
 	<screen name="tMenu">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Menu" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Menu" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
 	<screen name="tInfo">
-		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend" />
-		<eLabel text="Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
+		<ePixmap  position="1114,32" zPosition="1" size="108,15" pixmap="mega32/buttons/colors.png" alphatest="blend"/>
+		<eLabel text="Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
 	<screen name="weatPanel">

@@ -1743,7 +1743,7 @@
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." backgroundColor="black" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
-		<eLabel text=" Config Wizard..." position="230,125" size="540,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
+		<eLabel text="Config Wizard..." position="230,125" size="540,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<widget name="text" position="230,175" size="500,400" font="Regular;20" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
 			<widget source="list" render="Listbox" position="60,500" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
@@ -1769,10 +1769,10 @@
 		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
 		<eLabel text="SatLists Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
-			<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
+			<widget source="list" render="Listbox" position="60,340" size="730,210" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>

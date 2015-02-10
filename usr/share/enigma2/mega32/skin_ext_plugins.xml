@@ -155,8 +155,8 @@
 		<panel name="2Buttons" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="520,230" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="description" position="60,520" size="520,200" font="Regular;20" halign="center" foregroundColor="#538eff" transparent="1" zPosition="2" />
-		<widget name="pleasewait" position="60,620" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" />
+		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
+		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG"  text="PANEL P012" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -166,7 +166,7 @@
 		<panel name="2Buttons" />
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="config" position="60,100" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="description" position="60,520" size="520,200" font="Regular;20" halign="center" foregroundColor="#538eff" transparent="1" zPosition="2" />
+		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
 		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG"  text="PANEL P013" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -1422,4 +1422,30 @@
 		<widget name="VKeyIcon" pixmap="mega32/buttons/key_text.png" position="630,400" zPosition="10" size="35,25" transparent="1" alphatest="on" />
 		<!-- eLabel name="DEBUG"  text="PANEL P099" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- Plugin Animation Setup OKK -->
+	<screen name="AnimationSetupScreen"  position="0,0" size="1280,720" title="Animation Setup" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="descTemplate" />
+		<panel name="4Buttons4" />
+		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+   <widget source="introduction" render="Label" position="670,415" size="560,24" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P100" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+  </screen>
+
+	<!-- Plugin Animation Configuration OKK -->
+	<screen name="AnimationSetupConfig"  position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="3Buttons4" />
+	 <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P101" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+  </screen>
+
+	<!-- Plugin Remote Configuration OKK -->
+	<screen name="RemoteControlCode"  position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="2Buttons4" />
+   <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P102" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+  </screen>	
 </skin>

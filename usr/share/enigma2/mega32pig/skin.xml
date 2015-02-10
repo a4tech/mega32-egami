@@ -1681,7 +1681,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1703,7 +1703,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1727,7 +1727,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1751,7 +1751,7 @@
 		<widget name="config" position="60,460" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1775,7 +1775,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1799,7 +1799,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1823,7 +1823,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1847,7 +1847,7 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -1866,7 +1866,7 @@
 		<widget name="list" position="60,370" zPosition="1" size="730,200"/>
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
+		<ePixmap position="890,0" size="320,720" pixmap="mega32/menu/picwiz.png"/>
 		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>

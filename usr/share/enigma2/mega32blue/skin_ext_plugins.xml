@@ -90,8 +90,7 @@
 
 	<!-- AutoTimer Wizard OKK -->
 	<screen name="AutoTimerWizard" position="0,0" size="1280,720" title="AutoTimer wizard" backgroundColor="black" flags="wfNoBorder">
-		<panel name="GenericLayoutFullTemplateW"/>
-		<ePixmap position="60,100" size="140,140" pixmap="mega32/skin_default/wizard.png" alphatest="blend"/>
+		<panel name="GenericLayoutWizardTemplate"/>
 		<eLabel text="AutoTimer wizard" position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1"/>
 		<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" transparent="1">
@@ -100,8 +99,6 @@
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
-		<ePixmap position="890,0" size="320,720" pixmap="mega32blue/menu/picwiz.png"/>
-		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend"/>
 		<widget name="wizard" position="0,0" size="0,0"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="mega32/skin_default/arrowdown.png" zPosition="11" alphatest="on"/>
@@ -155,8 +152,8 @@
 		<panel name="2Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,100" size="520,230" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
-		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3" /> 
+		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1"/>
+		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P012" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -166,7 +163,7 @@
 		<panel name="2Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,100" size="520,500" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
+		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1"/>
 		<widget name="pleasewait" position="640,520" size="560,230" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="3"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P013" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -349,7 +346,7 @@
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_crossepg.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
-		<widget source="list" render="Listbox" position="60,90" size="520,520" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" >
+		<widget source="list" render="Listbox" position="60,90" size="520,520" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (40, 5), size = (480, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -990,7 +987,7 @@
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4ButtonsW"/>
 		<ePixmap pixmap="mega32/menu/ico_setup.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
-		<widget name="config" position="60,100" size="520,200" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="60,100" size="520,200" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" position="60,540" size="520,250" font="Regular;21" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P069" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -1004,7 +1001,7 @@
 	</screen>
 
 	<!-- VPS Plugin OKK -->
-	<screen name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information" flags="wfNoBorder" >
+	<screen name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<ePixmap pixmap="mega32/menu/ico_setup.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="text" position="60,100" size="520,520" font="Regular;22" backgroundColor="black" transparent="1"/>
@@ -1142,7 +1139,7 @@
 	<screen name="AutoSkyBouquetsLogView" position="0,0" size="1280,720" title="Backup Log" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="1Buttons"/>
-		<widget name="list" position="60,100" size="520,500" font="Regular;19" transparent="1" />
+		<widget name="list" position="60,100" size="520,500" font="Regular;19" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P082" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1424,29 +1421,28 @@
 	</screen>
 
 	<!-- Plugin Animation Setup OKK -->
-	<screen name="AnimationSetupScreen"  position="0,0" size="1280,720" title="Animation Setup" flags="wfNoBorder" >
-		<panel name="GenericLayoutFullTemplate" />
-		<panel name="descTemplate" />
-		<panel name="4Buttons4" />
+	<screen name="AnimationSetupScreen"  position="0,0" size="1280,720" title="Animation Setup" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="descTemplate"/>
+		<panel name="4Buttons4"/>
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
    <widget source="introduction" render="Label" position="670,415" size="560,24" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P100" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
 
 	<!-- Plugin Animation Configuration OKK -->
-	<screen name="AnimationSetupConfig"  position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder" >
-		<panel name="GenericLayoutFullTemplate" />
-		<panel name="3Buttons4" />
+	<screen name="AnimationSetupConfig"  position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="3Buttons4"/>
 	 <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P101" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
 
 	<!-- Plugin Remote Configuration OKK -->
-	<screen name="RemoteControlCode"  position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder" >
-		<panel name="GenericLayoutFullTemplate" />
-		<panel name="2Buttons4" />
+	<screen name="RemoteControlCode"  position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2Buttons4"/>
    <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P102" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
 </skin>
-

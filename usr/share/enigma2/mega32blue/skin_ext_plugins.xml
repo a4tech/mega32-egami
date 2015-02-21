@@ -1421,7 +1421,7 @@
 	</screen>
 
 	<!-- Plugin Animation Setup OKK -->
-	<screen name="AnimationSetupScreen"  position="0,0" size="1280,720" title="Animation Setup" flags="wfNoBorder">
+	<screen name="AnimationSetupScreen" position="0,0" size="1280,720" title="Animation Setup" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="descTemplate"/>
 		<panel name="4Buttons4"/>
@@ -1431,7 +1431,7 @@
   </screen>
 
 	<!-- Plugin Animation Configuration OKK -->
-	<screen name="AnimationSetupConfig"  position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder">
+	<screen name="AnimationSetupConfig" position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="3Buttons4"/>
 	 <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
@@ -1439,10 +1439,48 @@
   </screen>
 
 	<!-- Plugin Remote Configuration OKK -->
-	<screen name="RemoteControlCode"  position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder">
+	<screen name="RemoteControlCode" position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="2Buttons4"/>
    <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P102" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
+
+	<!-- Plugin Firmware Upgrade Config OKK -->
+	<screen name="FirmwareUpgrade" position="0,0" size="1280,720" title="Firmware Upgrade" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="descTemplate"/>
+		<panel name="2Buttons4"/>
+		<widget name="config" position="60,90" size="520,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget source="status" render="Label" position="670,415" size="560,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P103" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+  </screen>
+
+	<!-- Plugin Firmware Upgrade FileBrowser OKK -->
+	<screen name="FUFilebrowser" position="0,0" size="1280,720" title="File Browser" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="descTemplate"/>
+		<panel name="3Buttons4RGB"/>
+		<widget name="file_list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget source="status" render="Label" position="670,415" size="560,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL P104" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+  </screen>
+
+	<!-- Plugin LCD4linux Settings OKK -->
+	<screen name="LCDdisplayConfig" position="0,0" size="1280,720" title="LCD4linux Settings" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="4Buttons"/>
+		<widget name="config" position="50,100" size="535,500" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget source="introduction" render="Label" position="42,620" size="550,24" zPosition="10" font="Regular;20" halign="center" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
+		<ePixmap pixmap="mega32/buttons/key_menu.png" position="1075,665" zPosition="3" size="50,25" transparent="1" alphatest="on"/>		
+		<widget source="Version" render="Label" position="1145,662" size="100,15" zPosition="1" font="Regular;11" halign="left" valign="center" backgroundColor="#25062748" transparent="1"/>
+		<widget source="LibUSB" render="Label" position="1145,679" size="100,15" zPosition="1" font="Regular;11" halign="left" valign="center" foregroundColor="red" backgroundColor="#25062748" transparent="1"/>
+		<widget source="About" render="Label" position="484,602" size="100,15" zPosition="1" font="Regular;11" halign="right" valign="center" backgroundColor="#25062748" transparent="1"/>
+		<widget name="LCD1" position="610,20" zPosition="4" size="570,320" transparent="1" alphatest="on"/>
+		<widget name="LCD2" position="610,340" zPosition="4" size="570,320" transparent="1" alphatest="on"/>
+		<widget source="LCD1text" render="Label" position="610,30" size="200,15" zPosition="1" font="Regular;11" halign="left" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="LCD2text" render="Label" position="610,360" size="200,15" zPosition="1" font="Regular;11" halign="left" backgroundColor="transpBlack" transparent="1"/>			
+		<!-- eLabel name="DEBUG"  text="PANEL P105" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
 </skin>

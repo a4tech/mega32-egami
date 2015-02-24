@@ -15,7 +15,7 @@
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
 		<ePixmap position="60,90" zPosition="3" size="51,51" pixmap="mega32/icons/ccc.png" alphatest="blend" transparent="1"/>
-		<widget name="choose_cam" position="130,100" size="230,25" font="Regular;24" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget name="choose_cam" position="130,100" size="350,25" font="Regular;24" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
  		<eLabel text="OK to Start" position="310,150" size="250,26" font="Regular;22" halign="right" foregroundColor="white" backgroundColor="#0045a6" transparent="1" zPosition="2"/>
 		<widget name="config" position="60,150" size="515,26" font="Regular;22" zPosition="2" transparent="1"/>
 		<!-- is crypted ? -->

@@ -192,7 +192,7 @@
 	<!-- ScreenSaver OKK -->
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
-		<widget name="picture" pixmap="picon_default.png" position="0,0" size="130,80" alphatest="on" zPosition="1"/>
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="252,256" alphatest="on" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="PANEL SP01" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -329,7 +329,7 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="4Buttons"/>
 		<panel name="menuInfo"/>
-		<!-- Lista Canali -->
+		<!-- List Canal -->
 		<widget name="list" position="60,90" size="730,513" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#666666" zPosition="3" serviceItemHeight="30"
 		                    serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;19" colorServiceDescription="#a1daff" colorServiceDescriptionSelected="white"
 		                    picServiceEventProgressbar="mega32/bars/pl.png" transparent="1"/>
@@ -350,7 +350,7 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="4Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
-		<!-- Lista -->
+		<!-- List -->
 		<widget name="list" position="60,90" size="730,513" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="780,90" size="10,513" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1" zPosition="5"/>
 		<widget name="number" position="860,150" size="0,513" transparent="1" zPosition="5"/>
@@ -404,14 +404,15 @@
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<!-- Event/Name -->
-		<eLabel text="Start                                       Remaining" position="60,150" size="600,30" font="Regular;22" zPosition="1" halign="left" foregroundColor="bluette" backgroundColor="background" transparent="1"/>
-		<widget name="datetime" position="125,151" size="220,380" font="Regular;22" foregroundColor="#808080" backgroundColor="black" transparent="1"/>
-		<widget name="duration" position="510,151" size="115,30"  font="Regular;22" foregroundColor="red" backgroundColor="black" transparent="1"/>
+		<eLabel text="Start" position="60,150" size="100,30" font="Regular;22" zPosition="1" halign="left" foregroundColor="bluette" backgroundColor="background" transparent="1"/>
+		<eLabel text="Remaining" position="440,150" size="100,30" font="Regular;22" zPosition="1" halign="right" foregroundColor="bluette" backgroundColor="background" transparent="1"/>
+		<widget name="datetime" position="165,151" size="220,380" font="Regular;22" foregroundColor="#808080" backgroundColor="black" transparent="1"/>
+		<widget name="duration" position="570,151" size="115,30"  font="Regular;22" foregroundColor="red" backgroundColor="black" transparent="1"/>
 		<eLabel text="-" position="60,185" size="728,1" font="Regular;26" zPosition="0" backgroundColor="#505050"/>
 		<eLabel text="-" position="60,187" size="728,1" font="Regular;26" zPosition="0" backgroundColor="#303030"/>
 		<ePixmap position="780,200" zPosition="4" size="15,300" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1"/>
-		<widget name="epg_description" 	position="60,200" size="730,300" font="Regular;24" foregroundColor="#e0e0e0" backgroundColor="black" transparent="1"/>
-		<widget name="FullDescription" 	position="60,200" size="0,0" font="Regular;24" foregroundColor="#e0e0e0" backgroundColor="black" transparent="1"/>
+		<widget name="epg_description" position="60,200" size="730,300" font="Regular;24" foregroundColor="#e0e0e0" backgroundColor="black" transparent="1"/>
+		<widget name="FullDescription" position="60,200" size="0,0" font="Regular;24" foregroundColor="#e0e0e0" backgroundColor="black" transparent="1"/>
 		<eLabel text="-" position="60,515" size="728,1" zPosition="0" backgroundColor="#505050"/>
 		<eLabel text="-" position="60,517" size="728,1" zPosition="0" backgroundColor="#303030"/>
 		<!-- Next Event -->
@@ -430,6 +431,24 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
+	<!-- Event View Simple OKK -->
+	<screen name="EventViewSimple" position="center,e-260" size="1280,214" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-1" size="1280,214" pixmap="mega32blue/menu/event-info-bg.png"/>
+		<widget source="Title" render="Label" position="60,34" size="400,30" font="Regular;24" valign="center" halign="left" noWrap="1" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<!-- Date -->
+		<widget source="global.CurrentTime" render="Label" position="985,38" size="120,26" zPosition="2" font="Regular;20" backgroundColor="transpBlack" foregroundColor="#808080" transparent="1">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<!-- Time -->
+		<ePixmap position="1103,44" zPosition="2" size="22,22" pixmap="mega32/icons/clock.png" alphatest="on"/>
+		<widget source="global.CurrentTime" render="Label" position="1130,38" size="90,26" zPosition="4" font="Regular;20" backgroundColor="black" foregroundColor="#808080" transparent="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>	
+			<widget name="datetime" position="510,38" size="250,22" font="Regular;20" backgroundColor="transpBlack" foregroundColor="#808080" transparent="1"/>
+			<widget name="duration" position="760,38" size="150,22" font="Regular;20" backgroundColor="transpBlack" foregroundColor="#808080" transparent="1"/>
+			<widget name="FullDescription" position="60,68" size="1160,74" font="Regular;22" foregroundColor="#e0e0e0" backgroundColor="black" transparent="1"/>
+	</screen>
+	
 	<!-- MediaPlayer OKK -->
 	<screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" flags="wfNoBorder">
 		<ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="mega32blue/menu/panelmusic.png"/>
@@ -472,8 +491,8 @@
 	<!-- Audio Track Selection OKK -->
 	<screen name="AudioSelection" position="0,0" size="1280,720" title="Audio Track Selection">
 		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="descTemplate"/>
 		<panel name="SmallPigTemplate"/>
-		<ePixmap pixmap="mega32/menu/ico_mediaplayer.png" position="790,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget source="key_red" render="Pixmap" pixmap="mega32/buttons/key_red.png" position="60,100" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -521,34 +540,28 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="menuInfo"/>
 		<panel name="4Buttons"/>
-		<!-- Lista Registrazioni -->
-		<ePixmap  position="800,20" zPosition="-1" size="480,400" pixmap="mega32blue/menu/shadow.png"/>
+		<!-- Record List -->
 		<widget name="list" position="60,90" size="730,500" zPosition="4" foregroundColor="white" scrollbarMode="showOnDemand"  transparent="1"/>
 		<widget name="waitingtext" position="60,450" size="520,100" zPosition="4" font="Regular;22" halign="left" valign="center" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
-		<widget name="freeDiskSpace" position="850,260" size="410,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1" zPosition="2"/>
-		<widget name="TrashcanSize"  position="850,290" size="410,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1" zPosition="2"/>
-		<eLabel position="830,390" size="410,2" backgroundColor="#20101010" zPosition="2"/>
-		<ePixmap pixmap="mega32/icons/info_on.png" position="830,400" size="50,50" zPosition="2" alphatest="blend"/>
-		<widget source="Service" render="Label" position="830,355" zPosition="4" size="410,30" font="Regular;28" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1">
+		<widget name="freeDiskSpace" position="850,230" size="410,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1" zPosition="2"/>
+		<widget name="TrashcanSize"  position="850,260" size="410,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1" zPosition="2"/>
+		<eLabel position="830,360" size="410,2" backgroundColor="#20101010" zPosition="2"/>
+		<ePixmap pixmap="mega32/icons/info_on.png" position="830,370" size="50,50" zPosition="2" alphatest="blend"/>
+		<widget source="Service" render="Label" position="830,325" zPosition="4" size="410,30" font="Regular;28" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1" shadowColor="black" shadowOffset="1,1">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="890,405" zPosition="6" size="120,26" font="Regular;24" halign="left" transparent="1" foregroundColor="yellow" backgroundColor="black">
+		<widget source="Service" render="Label" position="890,365" zPosition="6" size="120,26" font="Regular;24" halign="left" transparent="1" foregroundColor="yellow" backgroundColor="black">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="970,405" size="260,70" font="Regular;22" halign="left" foregroundColor="#808080" backgroundColor="black" transparent="1" zPosition="5">
+		<widget source="Service" render="Label" position="890,390" size="350,50" font="Regular;22" halign="left" foregroundColor="#808080" backgroundColor="black" transparent="1" zPosition="5">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="810,460" zPosition="4" size="430,158" font="Regular;20" halign="center" transparent="1" backgroundColor="black">
+		<widget source="Service" render="Label" position="820,445" zPosition="4" size="420,155" font="Regular;20" halign="center" transparent="1" backgroundColor="black">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="830,120" size="0,0" font="Regular;20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
-			<convert type="MovieInfo">MetaDescription</convert>
-		</widget>
-		<widget name="chosenletter" position="640,40" size="600,576" foregroundColor="yellow" font="Regular;240" halign="center" valign="center" transparent="1" zPosition="4"/>
-		<widget name="DescriptionBorder" position="640,80" size="0,0" transparent="1" zPosition="3"/>
-		<widget name="movie_sort" position="1130,365" size="35,20" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="on"/>
-		<widget name="movie_off"  position="1190,365" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_sort" position="1130,335" size="35,20" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_off"  position="1190,335" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S013" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1529,13 +1542,13 @@
 		<widget source="global.CurrentTime" render="Label" position="1100,45" size="120,24" zPosition="2" font="Regular;24" halign="left" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Format %H:%M:%S </convert>
 		</widget>
-		<!-- Lista Canali -->
+		<!-- List Canal -->
 		<widget name="list" position="60,90" size="1165,525" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
-		<!-- Eventi -->
-		<widget name="now_button_sel"  pixmap="mega32/skin_default/epg_now.png"  position="400,40" zPosition="3" size="750,40" alphatest="on"/>
+		<!-- Event -->
+		<widget name="now_button_sel"  pixmap="mega32/skin_default/epg_now.png"  position="380,40" zPosition="3" size="750,40" alphatest="on"/>
 		<widget name="next_button_sel" pixmap="mega32/skin_default/epg_next.png" position="545,40" zPosition="3" size="750,40" alphatest="on"/>
 		<widget name="more_button_sel" pixmap="mega32/skin_default/epg_more.png" position="800,40" zPosition="3" size="750,40" alphatest="on"/>
-		<widget name="now_button"  pixmap="mega32/skin_default/epg_now.png"  position="400,40" zPosition="3" size="750,40" alphatest="on"/>
+		<widget name="now_button"  pixmap="mega32/skin_default/epg_now.png"  position="380,40" zPosition="3" size="750,40" alphatest="on"/>
 		<widget name="next_button" pixmap="mega32/skin_default/epg_next.png" position="545,40" zPosition="3" size="750,40" alphatest="on"/>
 		<widget name="more_button" pixmap="mega32/skin_default/epg_more.png" position="800,40" zPosition="3" size="750,40" alphatest="on"/>
 		<widget name="number" position="135,95" size="750,30" zPosition="1" foregroundColor="red" backgroundColor="#2f4964" transparent="1"/>

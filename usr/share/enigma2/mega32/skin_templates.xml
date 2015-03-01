@@ -362,6 +362,10 @@
 			<convert type="MenuEntryCompare">EGAMINews</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_radio.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">internet_radio</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">emu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -416,6 +420,10 @@
 		</widget>
 		<widget source="menu" render="FixedLabel" text="All the news about our image." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">EGAMINews</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="listen all your favorites internet-radio here." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">internet_radio</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="You can read the pictures inside this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">

@@ -1483,37 +1483,35 @@
 		<widget source="LCD2text" render="Label" position="610,360" size="200,15" zPosition="1" font="Regular;11" halign="left" backgroundColor="transpBlack" transparent="1"/>			
 		<!-- eLabel name="DEBUG"  text="PANEL P105" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-	<screen name="InternetRadioScreen" position="0,0" size="1280,720" title="EGAMI Internet Radio" backgroundColor="#ff000000" flags="wfNoBorder">
-		<eLabel text="Menu - Info" position="1118,675" size="110,30" font="Regular;20" halign="center" transparent="1" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0" />
-		<ePixmap position="1117,662" zPosition="1" size="108,15" pixmap="mega32blue/buttons/colors.png" alphatest="blend" />
-		<ePixmap position="1,center" zPosition="-1" size="1280,720" pixmap="mega32blue/menu/panelwd.png" alphatest="blend" transparent="1" />
-		<widget name="list" position="53,130" zPosition="2" size="741,480" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
-		<widget source="Title" render="Label" zPosition="1" position="160,43" size="600,28" font="Regular;24" foregroundColor="bluette" backgroundColor="#101010" transparent="1" />
-		<eLabel position="820,180" size="430,2" backgroundColor="#202020" zPosition="1" />  
+
+	<!-- Plugin Internet Radio OKK -->
+	<screen name="InternetRadioScreen" position="0,0" size="1280,720" title="EGAMI Internet Radio" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplateWC"/>
 		<panel name="4ButtonsW"/>
-		<widget name="headertext" position="54,77" zPosition="1" size="736,48" font="Regular; 24" transparent="1" foregroundColor="yellow" backgroundColor="black" halign="left" />
-		<ePixmap position="785,130" zPosition="4" size="29,490" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1" />
-		<widget name="station" position="820,27" zPosition="1" size="432,60" font="Regular; 28" transparent="1" backgroundColor="black" halign="center" foregroundColor="green" />
-		<ePixmap position="800,20" zPosition="-1" size="480,400" pixmap="mega32/menu/shadow.png" alphatest="blend" />
-		<widget name="title" position="821,96" zPosition="1" size="432,80" font="Regular; 28" transparent="1" backgroundColor="black" halign="center" foregroundColor="bluette" />
-		<widget name="cover" zPosition="2" position="811,192" size="451,425" />
-		<eLabel position="820,90" size="430,2" backgroundColor="#202020" zPosition="1" />            
-		<widget source="global.CurrentTime" render="Label" position="810,625" size="452,26" zPosition="5" font="Regular;22" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-			<convert type="ClockToText">Format:%a %e-%b-%Y %H:%M</convert>
-		</widget>
+		<panel name="menuInfo"/>	
+		<widget name="list" position="60,130" zPosition="2" size="730,480" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="headertext" position="54,82" zPosition="1" size="736,48" font="Regular; 24" transparent="1" foregroundColor="yellow" backgroundColor="black" halign="left"/>
+		<ePixmap position="780,130" zPosition="4" size="29,480" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1"/>
+		<widget name="station" position="820,87" zPosition="1" size="432,60" font="Regular; 28" transparent="1" backgroundColor="black" halign="center" foregroundColor="green"/>
+		<eLabel position="820,225" size="432,2" backgroundColor="#201010" zPosition="2"/> 
+		<widget name="title" position="821,235" zPosition="1" size="432,70" font="Regular; 28" transparent="1" backgroundColor="black" halign="center" foregroundColor="bluette"/>
+		<eLabel position="820,315" size="432,2" backgroundColor="#201010" zPosition="2"/>         
+		<widget name="cover" zPosition="2" position="820,320" size="432,289"/>
+  		<!-- eLabel name="DEBUG"  text="PANEL P106" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<screen name="InternetRadioSetup" position="0,0" size="1280,720" title="EGAMI Internet Radio Setup" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="2ButtonsW"/>
 		<panel name="descTemplate"/>
 		<widget name="config" position="55,90" itemHeight="30" size="525,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
-		<!-- eLabel name="DEBUG"  text="PANEL S023" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P107" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<screen name="InternetRadioInformationScreen" position="0,0" size="1280,720" title="EGAMI Internet Radio Setup" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="1ButtonsW"/>
-		<widget name="headertext" position="54,77" zPosition="1" size="736,48" font="Regular; 24" transparent="1" foregroundColor="yellow" backgroundColor="black" halign="left" />
+		<widget name="headertext" position="54,77" zPosition="1" size="736,48" font="Regular; 24" transparent="1" foregroundColor="yellow" backgroundColor="black" halign="left"/>
 		<widget name="text" position="55,90" font="Regular; 24" size="525,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
-		<!-- eLabel name="DEBUG"  text="PANEL S023" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL P108" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+
 </skin>

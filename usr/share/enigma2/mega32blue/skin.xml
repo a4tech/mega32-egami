@@ -998,7 +998,7 @@
 	<screen name="AutoMountView" position="0,0" size="1280,720" title="MountView" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="3ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_net.png" position="920,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget source="legend1" render="Label" position="60,90"  zPosition="1" size="130,60" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="bluette" transparent="1"/>
 		<widget source="legend2" render="Label" position="250,90" zPosition="1" size="400,60" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="bluette" transparent="1"/>
 		<widget source="legend3" render="Label" position="690,90" zPosition="1" size="120,60" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="bluette" transparent="1"/>
@@ -1027,7 +1027,7 @@
 	<screen name="UserManager" position="0,0" size="1280,720" title="UserManager" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="1ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_net.png" position="920,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget source="config" render="Listbox" position="60,100" size="730,400" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2285,7 +2285,7 @@
 	<screen name="HddFastRemove" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="2Buttons"/>
-		<ePixmap pixmap="mega32/menu/ico_storage.png" position="790,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_storage.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget source="menu" render="Listbox" position="60,100" size="520,260" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [

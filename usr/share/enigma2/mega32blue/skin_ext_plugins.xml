@@ -756,7 +756,7 @@
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="3ButtonsW"/>
 		<ePixmap position="780,130" zPosition="4" size="29,480" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1"/>
-		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,440" size="300,325" zPosition="-1" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend"/>
 		<widget name="config" position="60,90" size="730,28" zPosition="3" scrollbarMode="showNever"  itemHeight="25"/>
 		<widget source="feedlist" render="Listbox" position="60,130" size="730,480" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -821,7 +821,7 @@
 	<screen name="MyTubeVideoHelpScreen" position="0,0" size="1280,720" title="MyTube Player HelpScreen" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="1ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,440" size="300,325" zPosition="-1" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend"/>
 		<widget name="detailtext" position="60,100" size="730,500" zPosition="10" font="Regular;20" transparent="1" halign="left" valign="top" backgroundColor="darkgrey"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P059" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -830,7 +830,7 @@
 	<screen name="MyTubeTasksScreen" position="0,0" size="1280,720" title="MyTubeTasksScreen" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="1ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,440" size="300,325" zPosition="-1" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend"/>
 		<widget source="tasklist" render="Listbox" position="60,100" size="730,500" zPosition="7" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -851,7 +851,7 @@
 	<screen name="MyTubeSettingsScreen" position="0,0" size="1280,720" title="MyTubeSettingsScreen" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="1ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,440" size="300,325" zPosition="-1" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend"/>
 		<widget name="config" zPosition="2" position="60,90" size="730,500" scrollbarMode="showOnDemand"  transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P061" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -860,7 +860,7 @@
 	<screen name="MyTubeVideoInfoScreen" position="0,0" size="1280,720" title="MyTube Player MainScreen" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="1ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,440" size="300,325" zPosition="-1" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_mytube.png" position="940,455" size="256,256" zPosition="-1" alphatest="blend"/>
 		<widget name="author" position="60,100" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
 		<widget name="duration" position="60,130" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
 		<widget name="published" position="60,160" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>

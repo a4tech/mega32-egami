@@ -666,6 +666,10 @@
 			<convert type="MenuEntryCompare">satfinder</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_cable.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">cablescan</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_tuner_positioner.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">positioner_setup</convert>
 			<convert type="ConditionalShowHide"/>
@@ -692,6 +696,10 @@
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Check the SatFinder on all you LNB here." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">satfinder</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Scan all your services on the cable." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">cablescan</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Select the positioner setting in this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">

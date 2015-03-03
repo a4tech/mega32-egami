@@ -29,7 +29,7 @@
 		<widget name="lb_aspectratio" position="120,260" size="350,28" font="Regular;24" zPosition="2" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="lb_videosize"   position="120,290" size="350,28" font="Regular;24" zPosition="2" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="ecminfo" position="70,390" size="440,300" font="Regular;20" zPosition="2" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
-		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="1010,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<!-- eLabel name="DEBUG"  text="PANEL E002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -161,7 +161,7 @@
 	<!--  EGAMI SoftCam CCCam Info OKK -->
 	<screen name="EGSoftCamInfo" position="0,0" size="1280,720" title="EGAMI Softcam Info" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
-		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="1010,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
       		<widget name="menu" position="60,90" itemHeight="30" size="515,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL E014" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -170,7 +170,7 @@
 	<screen name="EGEmuInfoScript" position="0,0" size="1280,720" title="EGAMI Emu Info Scripts" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<widget name="list" position="60,90" itemHeight="30" size="515,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
-		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="1010,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_emulator.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<eLabel position="610,390" size="630,2" backgroundColor="#20101010" zPosition="2"/>
 		<ePixmap pixmap="mega32/icons/info.png" position="610,410" size="50,50" zPosition="2" alphatest="blend"/>
 		<widget name="statuslab" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1"/>

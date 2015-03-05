@@ -1249,6 +1249,8 @@
 				}
 			</convert>
 		</widget>
+		<ePixmap pixmap="mega32/buttons/1colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<eLabel text="Return" position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S051" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1256,7 +1258,7 @@
 	<screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
 		<panel name="2ButtonsW"/>
-		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,100" size="730,400" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S052" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -1268,7 +1270,7 @@
 		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="header" position="60,100" size="650,30" font="Regular;28" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
 		<widget name="config" position="55,160" size="520,300" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="footer" position="55,620" size="520,25" font="Regular;22" halign="left" zPosition="2" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<widget name="footer" position="610,474" size="360,130" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="4"/>
 		<eLabel text="Exit" position="100,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<eLabel text="Start Scan" position="340,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S053" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -1277,7 +1279,8 @@
 	<!-- TUNER Service Scan OKK -->
 	<screen name="ServiceScan" position="0,0" size="1280,720" title="Service Scan" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
-		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<panel name="2ButtonsW"/>
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget source="FrontendInfo" render="Pixmap" pixmap="mega32/screens/scansat.png" position="710,550" size="64,64" zPosition="2" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -1303,17 +1306,16 @@
 		<widget name="scan_progress" position="60,290"  zPosition="3" size="570,21" pixmap="mega32/bars/br_scancl.png" transparent="1"/>
 		<widget name="servicelist" position="60,320" size="720,300" selectionDisabled="1" transparent="1" alphatest="on"/>
 		<eLabel text="Press Exit to terminate Scan" position="870,270" size="340,60" zPosition="3" halign="left" font="Regular;24" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
-		<panel name="2ButtonsW"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S054" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- TUNER Scan Setup OKK -->
 	<screen name="ScanSetup" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,90" size="520,375" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="introduction" position="60,620" size="500,25" font="Regular;20" halign="left" zPosition="2" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
-		<panel name="2Buttons"/>
+		<widget name="introduction" position="610,474" size="360,130" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="4"/>
 		<eLabel text="Exit" position="100,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<eLabel text="Start Scan" position="340,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S055" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -1343,14 +1345,14 @@
 		<widget name="fec_value" position="180,250" size="120,22" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="-" position="60,290" size="520,1" zPosition="0" backgroundColor="#404040"/>
 		<eLabel text="-" position="60,292" size="520,1" zPosition="0" backgroundColor="#303030"/>
-		<widget name="list" position="60,340" size="520,250" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="60,340" size="520,250" scrollbarMode="showOnDemand" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL S056" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- TUNER Satfinder OKK -->
 	<screen name="Satfinder" position="0,0" size="1280,720"  title="Satfinder" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
-		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<ePixmap position="140,100" zPosition="1" size="280,21" pixmap="mega32/bars/bar_snr_lcn.png"/>
 		<ePixmap position="140,140" zPosition="1" size="280,21" pixmap="mega32/bars/bar_snr_lcn.png"/>
 		<ePixmap position="140,180" zPosition="1" size="280,21" pixmap="mega32/bars/bar_snr_lcn.png"/>
@@ -1388,9 +1390,9 @@
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 		<widget name="config" position="60,250" size="515,300" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="introduction" position="60,620" size="520,25" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
-		<ePixmap position="50,659" size="300,50" pixmap="mega32/buttons/1colors.png" zPosition="2" alphatest="blend"/>
-		<eLabel text="Return" position="100,664" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
+		<widget name="introduction" position="610,474" size="360,130" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="4"/>
+		<ePixmap pixmap="mega32/buttons/1colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
+		<eLabel text="Return" position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S057" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1414,7 +1416,7 @@
 	<screen name="RotorNimSelection" position="0,0" size="1280,720" title="select Slot" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
-		<widget name="nimlist" position="60,100" size="520,360" transparent="1"/>
+		<widget name="nimlist" position="60,100" size="520,360" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL S060" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1429,16 +1431,37 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S061" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- FastScan Screen OKK -->
-	<screen name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan" flags="wfNoBorder">
+	<!-- CableScan Screen OKK -->
+	<screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,100" size="520,250" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="introduction" position="60,620" size="520,25" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
-		<panel name="2Buttons"/>
+		<widget name="introduction" position="610,474" size="360,130" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="4"/>
 		<eLabel text="Exit" position="100,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<eLabel text="Start Scan" position="340,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S062" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CableScan Status OKK -->
+	<screen name="CableScanStatus" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<widget name="scan_state" position="60,100" zPosition="2" size="520,30" font="Regular;18"/>
+		<widget name="scan_progress" position="60,155" size="520,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<!-- eLabel name="DEBUG"  text="PANEL S063" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+		
+	<!-- FastScan Screen OKK -->
+	<screen name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2Buttons"/>
+		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<widget name="config" position="60,100" size="520,250" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="introduction" position="610,474" size="360,130" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="4"/>
+		<eLabel text="Exit" position="100,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
+		<eLabel text="Start Scan" position="340,667" size="200,22" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL S064" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- FastScan Status OKK -->
@@ -1447,7 +1470,7 @@
 		<ePixmap pixmap="mega32/menu/ico_sat.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="scan_state" position="60,100" zPosition="2" size="520,30" font="Regular;18"/>
 		<widget name="scan_progress" position="60,155" size="520,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
-		<!-- eLabel name="DEBUG"  text="PANEL S063" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<!-- eLabel name="DEBUG"  text="PANEL S065" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- COMMON INTERFACE/EMU ZONE -->

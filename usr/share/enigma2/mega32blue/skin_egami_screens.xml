@@ -633,6 +633,7 @@
 		<widget position="1160,667" size="210,21" name="key_menu"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P054" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>	
+	
 	<!-- EgamiBootLogo OKK -->
 	<screen name="EgamiBootLogoSelector" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>

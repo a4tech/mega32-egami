@@ -2550,40 +2550,50 @@
 	<!-- ***** InputBox/MsgBox ***** -->
 
 	<!-- Input Box -->
-	<screen name="ChoiceBox" position="0,0" size="740,650" title="Input Box">
-		<widget name="text" position="20,20" size="810,25" font="Regular;24" foregroundColor="#538eff" transparent="1"/>
-		<widget name="list" position="20,40" size="810,335" scrollbarMode="showOnDemand" transparent="1"/>
-		<applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 80, textsize[1] + 80)
-count = len(self.list)
-if count &gt; 10:
-	count = 10
-offset = 25 * count
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset + 10
-if (640 &gt; wsizex):
-	wsizex = 640
-wsize = (wsizex, wsizey)
-# resize
-self.instance.resize(eSize(*wsize))
-# resize label
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-# move list
-listsize = (wsizex - 20, 25 * count)
-self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
-# center window
-newwidth = wsize[0]
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
-		</applet>
+	<screen name="ChoiceBox" position="0,0" size="1280,720" title="Choose Extension" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplateW"/>
+		<widget name="text" position="60,450" size="730,250" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="60,80" size="730,450" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget font="Regular; 22" halign="left" position="900,286" render="Label" size="333,32" source="session.CurrentService" transparent="1" foregroundColor="white" zPosition="6">
+			<convert type="EGBoxInfo">Uptime</convert>
+		</widget>
+		<ePixmap position="840,274" size="50,50" zPosition="3" pixmap="mega32/icons/net1.png" alphatest="blend" />
+		<ePixmap position="840,388" zPosition="1" size="50,50" pixmap="mega32/icons/cpu_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,403" size="333,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGCpuUsage">$0</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="900,415" size="333,38" font="Regular; 16" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="white" backgroundColor="black">
+			<convert type="EGCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+		</widget>
+		<ePixmap position="840,331" zPosition="1" size="50,50" pixmap="mega32/icons/ram_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,346" size="333,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">MemTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,354" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black">
+			<convert type="pliLayoutInfo">MemTotal</convert>
+		</widget>
+		<ePixmap position="840,448" zPosition="1" size="50,50" pixmap="mega32/icons/flash1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,468" size="333,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">FleshInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,478" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black">
+			<convert type="pliLayoutInfo">Flesh</convert>
+		</widget>
+		<ePixmap position="840,507" zPosition="1" size="50,50" pixmap="mega32/icons/hdd_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="black" position="900,523" size="333,8" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">HddInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,533" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black">
+			<convert type="pliLayoutInfo">HddInfo</convert>
+		</widget>
+		<ePixmap position="840,565" zPosition="1" size="50,50" pixmap="mega32/icons/usb_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="black" position="900,578" size="333,8" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,588" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black">
+		  <convert type="pliLayoutInfo">UsbInfo</convert>
+		</widget>
 	</screen>
-
 	<!-- Message Box -->
 	<screen name="MessageBox" position="340,250" size="740,10" title="Message">
 		<widget name="text" position="65,15" size="520,0" font="Regular;22" transparent="1"/>

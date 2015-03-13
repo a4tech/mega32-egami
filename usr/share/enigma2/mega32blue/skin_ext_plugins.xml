@@ -515,13 +515,13 @@
 	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
+		<panel name="tMenu"/>		
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="lab1"      position="80,100"  size="250,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1"/>
 		<widget name="labactive" position="240,100" size="250,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1"/>
 		<widget name="lab2"      position="80,170"  size="250,30" font="Regular;20" valign="center" backgroundColor="#101010" transparent="1"/>
 		<widget name="labstop"   position="240,170" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun"    position="240,170" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<ePixmap position="540,45" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P041" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -588,6 +588,7 @@
 	<screen name="NetworkMiniDLNA" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
+		<panel name="tMenu"/>
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="autostart"   position="60,100"  size="100,24" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="labdisabled" position="180,97"  size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
@@ -614,7 +615,6 @@
 		<widget name="dlna"            position="80,550" size="200,30" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="dlnainactive"    position="300,550" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
 		<widget name="dlnaactive"      position="300,550" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
-		<ePixmap position="540,45" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P047" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -632,6 +632,7 @@
 	<screen name="NetworkInadyn" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
+		<panel name="tMenu"/>		
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="autostart"   position="60,100"  size="100,24" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="labdisabled" position="180,97"  size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
@@ -651,7 +652,6 @@
 		<widget name="sactive"     position="60,374"  size="32,32"  pixmap="icons/lock_on.png"  alphatest="on" zPosition="2"/>
 		<widget name="system"      position="120,374" size="100,30" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="labsys"      position="250,374" size="310,30" font="Regular;20" valign="center" backgroundColor="#274D5375"/>
-		<ePixmap position="540,45" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend" zPosition="4"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P049" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -669,6 +669,7 @@
 	<screen name="NetworkuShare" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4Buttons"/>
+		<panel name="tMenu"/>		
 		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="autostart"   position="80,107" size="100,24" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="labdisabled" position="180,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
@@ -698,7 +699,6 @@
 		<widget name="dlna" position="80,560" size="200,30" font="Regular;20" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="dlnainactive" position="300,560" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
 		<widget name="dlnaactive" position="300,560" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
-		<ePixmap position="1126,20" zPosition="4" size="74,36" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="on"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P051" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 

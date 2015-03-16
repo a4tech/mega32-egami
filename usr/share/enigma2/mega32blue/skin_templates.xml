@@ -1366,8 +1366,8 @@
 		<eLabel text="Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
-	<screen name="weatPanel">
 		<!-- Weather -->
+	<screen name="weatPanel">
 		<widget source="session.CurrentService" render="Pixmap" position="0,5" size="1280,62" pixmap="mega32blue/menu/wtpanel.png" zPosition="-1" transparent="1">
 			<convert type="EGWeather">Enable</convert>
 			<convert type="ConditionalShowHide"/>

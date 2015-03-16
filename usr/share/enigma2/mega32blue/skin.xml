@@ -2454,44 +2454,45 @@
 	<screen name="ChoiceBox" position="0,0" size="1280,720" title="Choose Extension" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="descTemplate"/>		
+		<ePixmap position="593,27" zPosition="0" size="687,591" pixmap="mega32blue/menu/shadoww.png" alphatest="blend"/>
 		<widget name="text" position="60,450" size="520,250" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="list" position="60,80" size="520,450" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="session.CurrentService" render="Label" position="630,478" size="400,32" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 			<convert type="EGBoxInfo">Uptime</convert>
 		</widget>
-		<ePixmap position="60,351" zPosition="1" size="50,50" pixmap="mega32/icons/ram_1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="120,366" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+		<ePixmap position="610,90" zPosition="2" size="50,50" pixmap="mega32/icons/ram_1.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="670,100" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
 			<convert type="EGLayoutInfo">MemTotal</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="120,378" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
+		<widget source="session.CurrentService" render="Label" position="670,110" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 			<convert type="EGLayoutInfo">MemTotal</convert>
 		</widget>
-		<ePixmap position="60,408" zPosition="1" size="50,50" pixmap="mega32/icons/cpu_1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="120,423" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+		<ePixmap position="610,145" zPosition="2" size="50,50" pixmap="mega32/icons/cpu_1.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="670,155" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
 			<convert type="EGCpuUsage">$0</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="120,435" size="450,38" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
+		<widget source="session.CurrentService" render="Label" position="670,165" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 			<convert type="EGCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
 		</widget>
-		<ePixmap position="60,468" zPosition="1" size="50,50" pixmap="mega32/icons/flash1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="120,483" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+		<ePixmap position="610,200" zPosition="2" size="50,50" pixmap="mega32/icons/flash_1.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="670,210" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
 			<convert type="EGLayoutInfo">FleshInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="120,495" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
+		<widget source="session.CurrentService" render="Label" position="670,220" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 			<convert type="EGLayoutInfo">Flesh</convert>
 		</widget>
-		<ePixmap position="60,525" zPosition="1" size="50,50" pixmap="mega32/icons/hdd_1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="120,540" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+		<ePixmap position="610,255" zPosition="2" size="50,50" pixmap="mega32/icons/hdd_1.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="670,265" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
 			<convert type="EGLayoutInfo">HddInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="120,552" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
+		<widget source="session.CurrentService" render="Label" position="670,275" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 			<convert type="EGLayoutInfo">HddInfo</convert>
 		</widget>
-		<ePixmap position="60,582" zPosition="1" size="50,50" pixmap="mega32/icons/usb_1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="120,597" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+		<ePixmap position="610,310" zPosition="2" size="50,50" pixmap="mega32/icons/usb_1.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="670,320" size="450,8" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
 			<convert type="EGLayoutInfo">UsbInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="120,609" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
+		<widget source="session.CurrentService" render="Label" position="670,330" size="450,26" halign="left" valign="center" font="Regular; 16" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="6">
 		  <convert type="EGLayoutInfo">UsbInfo</convert>
 		</widget>
 	</screen>

@@ -4,8 +4,8 @@
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="descTemplate"/>
 		<panel name="2Buttons"/>
-		<widget name="list" position="60,90" size="515,500" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap position="565,90" zPosition="4" size="10,500" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1"/>
+		<widget name="list" position="60,90" size="515,550" scrollbarMode="showOnDemand" transparent="1"/>
+		<ePixmap position="565,90" zPosition="4" size="10,550" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1"/>
 		<widget name="description" position="670,415" size="560,160" zPosition="10" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL E001" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>

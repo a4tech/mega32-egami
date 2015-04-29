@@ -1779,7 +1779,7 @@
 			<widget source="list" render="Listbox" position="60,500" size="730,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="60,460" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="config" position="60,460" size="730,180" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="120,500" zPosition="5" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="99"/>
 		<widget name="wizard" position="0,0" size="0,0"/>

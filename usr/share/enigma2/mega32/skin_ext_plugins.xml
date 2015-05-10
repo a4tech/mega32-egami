@@ -1513,5 +1513,34 @@
 		<widget name="text" position="55,90" font="Regular; 24" size="525,510" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P108" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-
+	<screen name="EMCSelection" position="0,0" size="1280,720" title=" Enhanced Movie Center" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="4Buttons" />
+		<panel name="4Buttons2" />
+		<panel name="menuInfo" />
+		<widget name="Cover" position="817,101" size="456,463" zPosition="0" alphatest="blend" />
+		<widget source="Service" render="Label" position="63,157" size="400,24" font="Regular;19" foregroundColor="ltbluette" halign="left" backgroundColor="black" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert>
+			<convert type="EMCClockToText">Date</convert>
+		</widget>
+		<widget source="Service" render="Label" position="64,125" size="725,22" font="Regular; 19" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" halign="left">
+			<convert type="EMCMovieInfo">ShortDescription</convert>
+		</widget>
+		<widget source="Title" render="Label" position="64,79" size="725,37" font="Regular; 24" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+		<widget source="Service" render="EGScrollLabel" position="69,525" size="715,110" font="Regular;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="left" valign="top">
+			<convert type="EMCMovieInfo">ShortDescription</convert>
+		</widget>
+		<widget name="list" position="56,192" size="720,310" itemHeight="28" CoolFont="Regular;18" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/cursor.png" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#00000000" foregroundColorSelected="#ffffff" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="mega32/menu/panelwd.png" />
+		<eLabel text="Enhanced Movie Center" position="40,41" size="770,30" font="Regular;26" halign="center" foregroundColor="bluette" backgroundColor="black" transparent="1" zPosition="1" />
+		<!-- Channel/Provider Name -->
+		<!-- Event/Name -->
+		<eLabel text="-" position="60,185" size="728,1" font="Regular;26" zPosition="0" backgroundColor="#505050" />
+		<eLabel text="-" position="60,187" size="728,1" font="Regular;26" zPosition="0" backgroundColor="#303030" />
+		<ePixmap position="780,200" zPosition="4" size="15,300" pixmap="mega32/bars/maxbar.png" alphatest="blend" transparent="1" />
+		<widget name="FullDescription" position="60,200" size="0,0" font="Regular;24" foregroundColor="une0e0e0" backgroundColor="black" transparent="1" />
+		<eLabel text="-" position="60,515" size="728,1" zPosition="0" backgroundColor="#505050" />
+		<eLabel text="-" position="60,517" size="728,1" zPosition="0" backgroundColor="#303030" />
+		<!-- Next Event -->
+		<!-- eLabel name="DEBUG"  text="PANEL S010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
 </skin>

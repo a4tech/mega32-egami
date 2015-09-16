@@ -1441,7 +1441,7 @@
 		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="900,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="bluette">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="black" font="Regular; 16" foregroundColor="foreground" render="Label" position="203,15" size="200,44" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+		<widget backgroundColor="black" font="Regular; 16" foregroundColor="foreground" render="Label" position="203,15" size="200,62" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">observationpoint</convert>
 		</widget>
 	</screen>

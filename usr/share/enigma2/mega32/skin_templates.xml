@@ -1400,13 +1400,13 @@
 		</widget>	-->
 		<ePixmap position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1" />
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="135,14" size="46,46" source="session.MSNWeather" transparent="1" zPosition="5">
-			<convert type="MSNWeather">weathericon,current,msn/,png</convert>
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/mega32/msn/,png</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="black" font="Regular; 28" foregroundColor="red" render="Label" position="55,18" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">temperature_current</convert>
 		</widget>
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="578,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
-			<convert type="MSNWeather">weathericon,day2,msn/,png</convert>
+			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/mega32/msn/,png</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="410,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day2</convert>
@@ -1418,7 +1418,7 @@
 			<convert type="MSNWeather">temperature_low,day4</convert>
 		</widget>
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="850,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
-			<convert type="MSNWeather">weathericon,day3,msn/,png</convert>
+			<convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/mega32/msn/,png</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="966,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day4</convert>
@@ -1430,7 +1430,7 @@
 			<convert type="MSNWeather">temperature_low,day2</convert>
 		</widget>
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="1129,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
-			<convert type="MSNWeather">weathericon,day4,msn/,png</convert>
+			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/mega32/msn/,png</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="685,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day3</convert>
@@ -1441,7 +1441,7 @@
 		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="900,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="bluette">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="black" font="Regular; 16" foregroundColor="foreground" render="Label" position="203,15" size="200,44" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+		<widget backgroundColor="black" font="Regular; 16" foregroundColor="foreground" render="Label" position="203,15" size="200,62" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">observationpoint</convert>
 		</widget>
 	</screen>

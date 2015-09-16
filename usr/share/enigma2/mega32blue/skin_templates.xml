@@ -1366,9 +1366,9 @@
 		<eLabel text="Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
-		<!-- Weather -->
+	<!-- Weather -->
 	<screen name="weatPanel">
-		<widget source="session.CurrentService" render="Pixmap" position="0,5" size="1280,62" pixmap="mega32blue/menu/wtpanel.png" zPosition="-1" transparent="1">
+		<!--<widget source="session.CurrentService" render="Pixmap" position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1">
 			<convert type="EGWeather">Enable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1389,7 +1389,7 @@
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="550,17" size="180,50" font="Regular; 18" halign="left" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" noWrap="1">
 			<convert type="EGWeather">TextTomorrow</convert>
-		</widget>
+		</widget>-->
 		<!-- Data
 		<widget source="global.CurrentTime" render="Label" position="730,13" size="340,50" zPosition="1" font="Regular;40" halign="right" backgroundColor="transpBlack" foregroundColor="#808080" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
@@ -1398,5 +1398,51 @@
 		<widget source="global.CurrentTime" render="Label" position="905,13" size="290,50" zPosition="1" font="Regular;40"  halign="right" backgroundColor="black" foregroundColor="#808080" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>	-->
+		<ePixmap position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1" />
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="135,14" size="46,46" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/mega32/msn/,png</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 28" foregroundColor="red" render="Label" position="55,18" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+			<convert type="MSNWeather">temperature_current</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="578,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/mega32/msn/,png</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="410,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day2</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="800,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+		<convert type="MSNWeather">temperature_high,day3</convert>
+			</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="1178,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="bluette">
+			<convert type="MSNWeather">temperature_low,day4</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="850,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/mega32/msn/,png</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="966,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day4</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="524,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+			<convert type="MSNWeather">temperature_high,day2</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="626,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="bluette">
+			<convert type="MSNWeather">temperature_low,day2</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="1129,16" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/mega32/msn/,png</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="685,25" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day3</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="1082,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+			<convert type="MSNWeather">temperature_high,day4</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" render="Label" position="900,25" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="bluette">
+			<convert type="MSNWeather">temperature_low,day3</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="black" font="Regular; 16" foregroundColor="foreground" render="Label" position="203,15" size="200,44" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+			<convert type="MSNWeather">observationpoint</convert>
+		</widget>
 	</screen>
 </skin>

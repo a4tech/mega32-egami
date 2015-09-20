@@ -1256,7 +1256,7 @@
 	<!-- TUNER NimSetup OKK -->
 	<screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW"/>
-		<panel name="2ButtonsW"/>
+		<panel name="4Buttons"/>
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
 		<widget name="config" position="60,100" size="730,400" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S052" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -2345,12 +2345,12 @@
 	<screen name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk Setup" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="1ButtonsW"/>
-		<eLabel text="Init" position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
 		<panel name="descTemplate"/>
 		<widget name="model"    position="60,100" size="520,25" font="Regular;22" transparent="1"/>
 		<widget name="capacity" position="60,140" size="520,25" font="Regular;22" transparent="1"/>
 		<widget name="bus"      position="60,180" size="520,25" font="Regular;22" transparent="1"/>
-		<widget name="initializetext" position="900,430" size="340,180" zPosition="2" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<widget name="initializetext" position="100,668" size="340,180" zPosition="2" font="Regular;19" foregroundColor="#ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="initialize" position="100,668" size="340,180" zPosition="2" font="Regular;19" foregroundColor="#ffffff" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="PANEL S050" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -2446,6 +2446,29 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL S108" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- GraphicalInfoBarEPG Buttons LEF-RIGHT -->
+	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder">
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="910,27" size="350,25" font="Regular;18" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="bouquetlist" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" />
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
+		<ePixmap pixmap="buttons/key_menu.png" position="20,166" size="70,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap position="85,158" size="1200,50" pixmap="mega32/buttons/4colors.png" zPosition="-1" alphatest="blend"/>
+		<widget name="key_red" position="130,164" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<widget name="key_green" position="370,164" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<widget name="key_yellow" position="610,164" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<widget name="key_blue" position="850,164" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 	</screen>
 
 	<!-- ***** InputBox/MsgBox ***** -->

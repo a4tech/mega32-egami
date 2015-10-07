@@ -1215,20 +1215,16 @@
 
 	<!-- Sleeptimer edit OKK -->
 	<screen name="SleepTimerEdit" position="0,0" size="1280,720" title="Sleep Timer" flags="wfNoBorder">
-		<panel name="GenericLayoutFullTemplate"/>
-		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
-		<widget name="red"    pixmap="mega32/buttons/key_red.png"    position="60,110" size="35,25" alphatest="on"/>
-		<widget name="green"  pixmap="mega32/buttons/key_green.png"  position="60,150" size="35,25" alphatest="on"/>
-		<widget name="yellow" pixmap="mega32/buttons/key_yellow.png" position="60,190" size="35,25" alphatest="on"/>
-		<widget name="blue"   pixmap="mega32/buttons/key_blue.png"   position="60,230" size="35,25" alphatest="on"/>
-		<widget name="red_text"    position="100,110" size="400,30" valign="center" font="Regular;22" transparent="1"/>
-		<widget name="green_text"  position="100,150" size="400,30" valign="center" font="Regular;22" transparent="1"/>
-		<widget name="yellow_text" position="100,190" size="400,30" valign="center" font="Regular;22" transparent="1"/>
-		<widget name="blue_text"   position="100,230" size="450,30" valign="center" font="Regular;22" transparent="1"/>
-		<widget name="pretext"     position="60,320" size="350,25" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="input"       position="360,320" size="50,25"  font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="aftertext"   position="420,320" size="300,25" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="current_status" position="60,360" zPosition="4" size="520,25" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1"/>
+		<eLabel name="b" position="0,0" size="500,250" backgroundColor="#00ffffff" zPosition="-2" />
+		<eLabel name="a" position="1,1" size="498,248" backgroundColor="#00000000" zPosition="-1" />
+		<widget source="Title" render="Label" position="10,10" foregroundColor="#00ffffff" size="480,50" halign="center" font="Regular; 35" backgroundColor="#00000000" />
+		<eLabel name="line" position="1,69" size="498,1" backgroundColor="#00ffffff" zPosition="1" />
+		<widget name="config" position="10,90" size="480,60" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="#00000000" foregroundColor="#00ffffff" />
+		<widget name="description" position="10,160" size="480,26" font="Regular; 16" foregroundColor="#00ffffff" halign="center" backgroundColor="#00000000" valign="center" />
+		<widget source="key_red" render="Label" position="35,212" size="170,30" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="#00000000" foregroundColor="#00ffffff" />
+		<widget source="key_green" render="Label" position="228,212" size="170,30" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="#00000000" foregroundColor="#00ffffff" />
+		<eLabel position="25,209" size="6,40" backgroundColor="#00e61700" />
+		<eLabel position="216,209" size="6,40" backgroundColor="#0061e500" />
 		<!-- eLabel name="DEBUG"  text="PANEL S050" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 

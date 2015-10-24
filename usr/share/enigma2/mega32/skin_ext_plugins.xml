@@ -6,8 +6,8 @@
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="4ButtonsW"/>
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
-    <widget source="title" render="Label" position="60,100" size="520,60" zPosition="3" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
-    <widget name="detailtext" position="60,160" size="520,454" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
+		<widget source="title" render="Label" position="60,100" size="520,60" zPosition="3" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<widget name="detailtext" position="60,160" size="520,454" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P001" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1427,25 +1427,25 @@
 		<panel name="descTemplate"/>
 		<panel name="4Buttons4"/>
 		<widget name="list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-   <widget source="introduction" render="Label" position="670,415" size="560,24" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
+		<widget source="introduction" render="Label" position="670,415" size="560,24" font="Regular;22" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P100" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Plugin Animation Configuration OKK -->
 	<screen name="AnimationSetupConfig"  position="0,0" size="1280,720" title="Animation Settings" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="3Buttons4"/>
-	 <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P101" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Plugin Remote Configuration OKK -->
 	<screen name="RemoteControlCode"  position="0,0" size="1280,720" title="Remote Control Code" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
 		<panel name="2Buttons4"/>
-   <widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="60,100" size="520,360" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P102" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Plugin Firmware Upgrade Config OKK -->
 	<screen name="FirmwareUpgrade"  position="0,0" size="1280,720" title="Firmware Upgrade" flags="wfNoBorder">
@@ -1455,7 +1455,7 @@
 		<widget name="config" position="60,90" size="520,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget source="status" render="Label" position="670,415" size="560,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P103" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Plugin Firmware Upgrade FileBrowser OKK -->
 	<screen name="FUFilebrowser"  position="0,0" size="1280,720" title="File Browser" flags="wfNoBorder">
@@ -1465,7 +1465,7 @@
 		<widget name="file_list" position="60,90" size="520,500" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget source="status" render="Label" position="670,415" size="560,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P104" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Plugin LCD4linux Settings OKK -->
 	<screen name="LCDdisplayConfig" position="0,0" size="1280,720" title="LCD4linux Settings" flags="wfNoBorder">
@@ -1542,5 +1542,12 @@
 		<eLabel text="-" position="60,517" size="728,1" zPosition="0" backgroundColor="#303030" />
 		<!-- Next Event -->
 		<!-- eLabel name="DEBUG"  text="PANEL S010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="KodiSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="KODI Settings">
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2Buttons"/>
+		<widget source="Title" render="Label" position="64,79" size="725,37" font="Regular; 24" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+		<ePixmap pixmap="mega32/menu/ico_net.png" position="940,455" size="256,256" zPosition="2" alphatest="blend"/>
+		<widget name="config" position="60,100" size="520,414" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 </skin>

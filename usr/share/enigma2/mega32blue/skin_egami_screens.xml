@@ -644,7 +644,12 @@
 	  <widget name="Preview" position="62,362" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
 	 <!-- eLabel name="DEBUG" text="PANEL P055" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-	
+	<screen name="EGAMI_UsbFormat" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2ButtonsW"/>
+		<widget name="lab1" position="60,90" size="520,210" halign="center" font="Regular;20" zPosition="2" />
+	</screen>	
 	<screen name="XBMCMeteoMain" position="center,center" size="1280,720" title="Weather" flags="wfNoBorder">
 		<ePixmap position="0,0" size="1280,720" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/100.png" />
 		<!--<widget source="global.CurrentTime" render="Label" position="1180,5" size="80,22" zPosition="1" font="Regular;16" valign="top" halign="left" foregroundColor="white" backgroundColor="transparent" transparent="1">

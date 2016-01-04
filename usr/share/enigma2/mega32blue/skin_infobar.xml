@@ -224,7 +224,7 @@
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
 		
-		<widget source="session.CurrentService" render="Label" position="830,655" size="610,22" font="Regular;19" halign="right" foregroundColor="yellow" backgroundColor="#10101010"  transparent="1" zPosition="11">
+		<widget source="session.CurrentService" render="Label" position="810,655" size="610,22" font="Regular;19" halign="right" foregroundColor="yellow" backgroundColor="#10101010"  transparent="1" zPosition="11">
 			<convert type="EGExtraInfo">EcmInfo</convert>
 		</widget>
 		<!--<widget source="session.CurrentService" render="Label" position="605,670"  size="610,22" font="Regular;19" halign="right" backgroundColor="#10101010" foregroundColor="grey" transparent="1" zPosition="11">
@@ -250,131 +250,12 @@
 		</widget>		
 		<panel name="SecondInfoBarNow"/>
 		<panel name="SecondInfoBarNext"/>
+		<panel name="weatPanel"/>		
 		<!-- eLabel name="DEBUG"  text="PANEL I002" position="40,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- Third INFOBAR  -->
-	<screen name="ThirdInfoBar" flags="wfNoBorder" position="0,10" size="1280,720" title="InfoBar" backgroundColor="transparent">
-		<panel name="InfoBar"/>
-		<panel name="SecondInfoBarNow1"/>
-		<panel name="SecondInfoBarNext1"/>
-		<panel name="weatPanel"/>
-		<eLabel position="54,652" size="1170,26"  backgroundColor="#30000000" zPosition="10"/>
-		<eLabel position="1102,564" size="123,80" backgroundColor="#30000000" zPosition="10"/>
-
-		<!-- Tuner in use -->
-		<eLabel position="1104,575" size="1,60" backgroundColor="#10202020" zPosition="12"/>
-		<eLabel text="TUN:" position="1110,573" size="100,20" font="Regular;19" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="12"/>
-		<widget source="session.FrontendInfo" render="Label" position="1158,573" size="100,20" font="Regular;19" foregroundColor="white" halign="left" backgroundColor="#101010" transparent="1" zPosition="12">
-			<convert type="FrontendInfo">STRING</convert>
-		</widget>
-
-		<widget source="session.CurrentService" render="Label" position="1110,595" size="130,20" font="Regular;19" halign="left" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="11">
-			<convert type="EGExtraInfo">CamName</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1110,617" size="140,20" font="Regular;19" foregroundColor="#808080" backgroundColor="#101010" transparent="1" zPosition="12">
-			<convert type="EGExtraInfo">E-C-N</convert>
-		</widget>
-
-		<widget source="session.CurrentService" render="Label" position="60,654" size="630,22" font="Regular;19" halign="left" noWrap="1" foregroundColor="#707070" backgroundColor="#10101010" transparent="1" zPosition="11">
-			<convert type="EGExtraInfo">NetInfo</convert>
-		</widget>
-		
-		<widget source="session.CurrentService" render="Label" position="308,654"  size="610,22" halign="right" font="Regular;19" foregroundColor="#606060" backgroundColor="#10101010" transparent="1" zPosition="11">
-			<convert type="PliExtraInfo">CryptoSpecial</convert>
-		</widget>
-		<!-- Data -->
-		<widget source="global.CurrentTime" render="Label" position="960,655" size="120,26" zPosition="12" font="Regular;20"  backgroundColor="transpBlack" foregroundColor="#808080" transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-		<!-- Time -->
-		<ePixmap position="1078,659" zPosition="12" size="22,22" pixmap="mega32/icons/clock.png" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="1105,655" size="90,26" zPosition="14" font="Regular;20"  backgroundColor="black" foregroundColor="#808080" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>	
-		<!-- Blinking pixmap (recording in progress?) -->
-		<ePixmap position="1200,655" zPosition="12" size="27,27" pixmap="mega32/buttons/icon_norec_light.png" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="mega32/buttons/icon_rec_light.png" position="1200,655" zPosition="13" size="19,19" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert> 
-		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL I003" position="40,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	
 	<!-- Second infobar Now extended information -->
 	<screen name="SecondInfoBarNow" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap position="0,40" size="1280,460" pixmap="mega32blue/menu/epg.png" zPosition="-1" transparent="1"/> 
-		<eLabel text="Now :" position="60,56" size="150,26" font="Regular;22" halign="right" foregroundColor="yellow" backgroundColor="#10202020" transparent="1" zPosition="3"/>
-		<!-- Event start & end times, and time remaining -->
-		<widget source="session.Event_Now" render="Label" position="220,56" size="100,26" halign="left" font="Regular; 22" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<eLabel text="-" position="300,58" size="20,26" halign="left" font="Regular; 20" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3"/>
-		<widget source="session.Event_Now" render="Label" position="320,56" size="100,26" halign="left" font="Regular; 22" foregroundColor="red" backgroundColor="#10101010" transparent="1" zPosition="3"  >
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert> 
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="420,56" size="130,26" font="Regular; 22" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3"  >
-			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
-		</widget>
-		<!-- Event name -->
-		<widget source="session.Event_Now" render="Label" position="65,95" size="520,80" font="Regular; 22" halign="center" foregroundColor="bluette" backgroundColor="#10101010" noWrap="1" transparent="1" zPosition="3">
-			<convert type="EventName">Name</convert>
-		</widget>		
-		<eLabel position="60,125" size="550,1" backgroundColor="#10202020" zPosition="3"/>
-		<!-- Event extended description -->
-		<widget source="session.Event_Now" render="EGScrollLabel" position="65,165" size="540,340" font="Regular; 22" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<!-- Event Genere and Ratings 
-		<widget source="session.Event_Now" render="Label" position="74,460" size="470,22" font="Regular;18" halign="left" foregroundColor="red" backgroundColor="secondBG" transparent="1" zPosition="3">
-		      <convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="430,460" size="200,22" font="Regular;18" halign="left" foregroundColor="yellow" backgroundColor="secondBG" transparent="1" zPosition="3">
-		      <convert type="EventName">SmallRating</convert>
-		</widget>
-		-->
-	</screen>
-
-	<!-- Second infobar Next extended information -->
-	<screen name="SecondInfoBarNext" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel text="Next :" position="660,56" size="150,26" font="Regular;22" halign="right" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3"/>
-		<!-- Event start & end times, and duration -->
-		<widget source="session.Event_Next" render="Label" position="820,56" size="100,26" font="Regular; 22" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<eLabel text="-" position="900,58" size="20,26" halign="left" font="Regular; 20" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3"/>
-		<widget source="session.Event_Next" render="Label" position="920,56" size="100,26" halign="left" font="Regular; 22" foregroundColor="red" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="1020,56" size="130,26" font="Regular; 22" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventTime">Duration</convert>
-			<convert type="ClockToText">InMinutes</convert>
-		</widget>
-		<!-- Event name -->
-		<widget source="session.Event_Next" render="Label" position="665,95" size="550,80" halign="center" font="Regular; 22" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<eLabel position="665,125" size="550,1" backgroundColor="#10202020" zPosition="3"/>
-		<!-- Event extended description -->
-		<widget source="session.Event_Next" render="EGScrollLabel" position="670,165" size="540,340" font="Regular; 22" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<!-- Event Genere and Ratings 
-		<widget source="session.Event_Now" render="Label" position="718,460" size="470,22" font="Regular;18" halign="left" foregroundColor="yellow" backgroundColor="secondBG" transparent="1" zPosition="1">
-		      <convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="1130,460" size="200,22" font="Regular;18" halign="left" foregroundColor="yellow" backgroundColor="secondBG" transparent="1" zPosition="1">
-		      <convert type="EventName">SmallRating</convert>
-		</widget>
-		-->
-	</screen>
-	
-	<!-- Second infobar Now extended information -->
-	<screen name="SecondInfoBarNow1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,65" size="1280,460" pixmap="mega32blue/menu/epg.png" zPosition="-1" transparent="1"/> 
 		<eLabel text="Now :" position="60,81" size="150,26" font="Regular;22" halign="right" foregroundColor="yellow" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<!-- Event start & end times, and time remaining -->
@@ -383,11 +264,11 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<eLabel text="-" position="300,83" size="20,26" halign="left" font="Regular; 20" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3"/>
-		<widget source="session.Event_Now" render="Label" position="320,81" size="100,26" halign="left" font="Regular; 22" foregroundColor="red" backgroundColor="#10101010" transparent="1" zPosition="3"  >
+		<widget source="session.Event_Now" render="Label" position="320,81" size="100,26" halign="left" font="Regular; 22" foregroundColor="red" backgroundColor="#10101010" transparent="1" zPosition="3">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert> 
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="420,81" size="130,26" font="Regular; 22" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3"  >
+		<widget source="session.Event_Now" render="Label" position="420,81" size="130,26" font="Regular; 22" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -411,7 +292,7 @@
 	</screen>
 
 	<!-- Second infobar Next extended information -->
-	<screen name="SecondInfoBarNext1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="SecondInfoBarNext" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel text="Next :" position="660,81" size="150,26" font="Regular;22" halign="right" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" zPosition="3"/>
 		<!-- Event start & end times, and duration -->
 		<widget source="session.Event_Next" render="Label" position="820,81" size="100,26" font="Regular; 22" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="3">
@@ -445,7 +326,7 @@
 		</widget>
 		-->
 	</screen>
-
+	
 	<!-- PLUGIN Movieplayer infobar OKK -->
 	<screen name="MoviePlayer" position="0,0" size="1280,700" title="MoviePlayer InfoBar" backgroundColor="#ff000000" flags="wfNoBorder">
 		<ePixmap position="0,550" zPosition="-1" size="1280,150" pixmap="mega32blue/menu/moviebar.png"/>

@@ -637,11 +637,18 @@
 	<!-- EgamiBootLogo OKK -->
 	<screen name="EgamiBootLogoSelector" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
-	  <panel name="GenericLayoutFullTemplate"/>
-	  <panel name="2ButtonsW"/>
-	  <widget name="config" position="60,90" itemHeight="30" size="520,210" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
-	  <eLabel position="60,360" size="516,279" backgroundColor="#10303030" zPosition="2"/>
-	  <widget name="Preview" position="62,362" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
-	 <!-- eLabel name="DEBUG" text="PANEL P055" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2ButtonsW"/>
+		<widget name="config" position="60,90" itemHeight="30" size="520,210" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
+		<eLabel position="60,360" size="516,279" backgroundColor="#10303030" zPosition="2"/>
+		<widget name="Preview" position="62,362" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
+		<!-- eLabel name="DEBUG" text="PANEL P055" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<screen name="EGAMI_UsbFormat" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="2ButtonsW"/>
+		<widget name="lab1" position="60,90" size="520,210" halign="center" font="Regular;20" zPosition="2" />
 	</screen>
 </skin>

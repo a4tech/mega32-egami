@@ -142,7 +142,7 @@
 		<widget source="session.FrontendStatus" render="Progress" position="100,658" size="61,6" zPosition="3" pixmap="mega32/icons/snron.png" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="177,655" zPosition="4" size="70,22"  font="Regular;19" foregroundColor="#ffffff" transparent="1" backgroundColor="transpBlack">
+		<widget source="session.FrontendStatus" render="Label" position="177,655" zPosition="4" size="60,22"  font="Regular;19" foregroundColor="#ffffff" transparent="1" backgroundColor="transpBlack">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- Panel AGC -->

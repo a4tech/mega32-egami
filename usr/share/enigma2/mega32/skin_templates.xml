@@ -942,6 +942,10 @@
 			<convert type="MenuEntryCompare">deep_standby</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_timer_power.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">sleep</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="FixedLabel" text="Press this button to put your box in standby." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">standby</convert>
 			<convert type="ConditionalShowHide"/>
@@ -957,7 +961,11 @@
 		<widget source="menu" render="FixedLabel" text="Press this button to put your box in deep standby." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">deep_standby</convert>
 			<convert type="ConditionalShowHide"/>
-		</widget>						
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Press this button to set sleep time of your box." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">sleep</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL T009" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1113,7 +1121,7 @@
 		</widget>	
 		<widget source="Title" render="Label" zPosition="1" position="40,46" size="770,30" halign="center" font="Head;24" foregroundColor="bluette" transparent="1" backgroundColor="transpBlack"/>
 	</screen>
-	
+
 	<!-- Mid Template -->
 	<screen name="GenericLayoutMidTemplate">
 		<ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="mega32/menu/panelw.png" alphatest="on" transparent="1"/>
@@ -1366,9 +1374,9 @@
 		<eLabel text="Info" position="1113,42" size="110,30" font="Regular;20" halign="center" valign="center" foregroundColor="bluette" backgroundColor="#40000000" shadowColor="black" shadowOffset="-1,-1" zPosition="0"/>
 	</screen>
 
-	<!-- Weather -->
+		<!-- Weather -->
 	<screen name="weatPanel">
-		<!--<widget source="session.CurrentService" render="Pixmap" position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1">
+		<widget source="session.CurrentService" render="Pixmap" position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1">
 			<convert type="EGWeather">Enable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1389,7 +1397,7 @@
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="550,17" size="180,50" font="Regular; 18" halign="left" foregroundColor="yellow" backgroundColor="#10101010" transparent="1" noWrap="1">
 			<convert type="EGWeather">TextTomorrow</convert>
-		</widget>-->
+		</widget>
 		<!-- Data
 		<widget source="global.CurrentTime" render="Label" position="730,13" size="340,50" zPosition="1" font="Regular;40" halign="right" backgroundColor="transpBlack" foregroundColor="#808080" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
@@ -1398,6 +1406,7 @@
 		<widget source="global.CurrentTime" render="Label" position="905,13" size="290,50" zPosition="1" font="Regular;40"  halign="right" backgroundColor="black" foregroundColor="#808080" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>	-->
+
 		<ePixmap position="0,5" size="1280,62" pixmap="mega32/menu/wtpanel.png" zPosition="-1" transparent="1" />
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="135,14" size="46,46" source="session.MSNWeather" transparent="1" zPosition="5">
 			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/mega32/msn/,png</convert>

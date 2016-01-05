@@ -193,6 +193,10 @@
 			<convert type="MenuEntryCompare">osdsetup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_video_enhancement.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">videoenhancement_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_user_skin_setup.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">skin_setup</convert>
 			<convert type="ConditionalShowHide"/>
@@ -219,6 +223,10 @@
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Choose all the 3D setup in this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">osd3dsetup</convert>
+			<convert type="ConditionalShowHide"/>			
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Here you can enhance video display, clean and sharp, brightness and contrast, noise reduction, etc." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">videoenhancement_setup</convert>
 			<convert type="ConditionalShowHide"/>			
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Select the infobar settings in this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
@@ -354,6 +362,10 @@
 			<convert type="MenuEntryCompare">egami_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_file.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">filecommand</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_multiboot.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">egami_boot</convert>
 			<convert type="ConditionalShowHide"/>
@@ -414,6 +426,10 @@
 			<convert type="MenuEntryCompare">egami_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="FixedLabel" text="Manage all your files from this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">filecommand</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="FixedLabel" text="Install and set the multiboot tool." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">egami_boot</convert>
 			<convert type="ConditionalShowHide"/>
@@ -466,23 +482,27 @@
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Software Update" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Software Management" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">setup_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="-Deep Standby" position="610,468" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="-Standby" position="610,496" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Restart" position="610,524" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Sleep Timer" position="610,524" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Restart GUI" position="610,552" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Restart" position="610,552" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Deep Standby" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Restart GUI" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -538,6 +558,10 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_parental.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">parental_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_app.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">software_manager</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_reset.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
@@ -604,7 +628,7 @@
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Fan control" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+		<widget source="menu" render="FixedLabel" text="-Temperature and fan control" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -616,20 +640,24 @@
 			<convert type="MenuEntryCompare">hardisk_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="FixedLabel" text="-USB Disk Format" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">hardisk_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>	
 		<widget source="menu" render="FixedLabel" text="-Filesystem Check" position="610,552" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">hardisk_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="FixedLabel" text="-Convert ext3 to ext4" position="610,580" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
-			<convert type="MenuEntryCompare">hardisk_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>	
 		<widget source="menu" render="FixedLabel" text="Activate Parental control and setup." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">parental_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Warning, if you do a factory reset, you will lose ALL your configuration data." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">factory_reset</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Manage all your applications here, updates, backup, extension install, etc." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">software_manager</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Check if updates available, open Software Update menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
@@ -744,12 +772,16 @@
 			<convert type="MenuEntryCompare">keyboard_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_in_device.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">input_device_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_remote.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">remotecontrolcode</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_fan.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
-			<convert type="MenuEntryCompare">fansetup_config</convert>
+			<convert type="MenuEntryCompare">tempfancontrol</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="-Front Display Panel" position="610,412" zPosition="1" size="360,24" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
@@ -820,12 +852,16 @@
 			<convert type="MenuEntryCompare">keyboard_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="FixedLabel" text="You can setup here your input devices." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">input_device_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="FixedLabel" text="Select remote code in this menu." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">remotecontrolcode</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="All you have ever dream about to set your Fan." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
-			<convert type="MenuEntryCompare">fansetup_config</convert>
+			<convert type="MenuEntryCompare">tempfancontrol</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL T006" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -842,6 +878,10 @@
 			<convert type="MenuEntryCompare">harddisk_init</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_usb_disk.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="MenuEntryCompare">usbdisk_init</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="mega32/menu/ico_hdd_check.png" position="940,455" size="256,256" alphatest="blend" transparent="1" zPosition="1">
 			<convert type="MenuEntryCompare">harddisk_check</convert>
 			<convert type="ConditionalShowHide"/>
@@ -856,6 +896,10 @@
 		</widget>
 		<widget source="menu" render="FixedLabel" text="Initializing storage device here." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
 			<convert type="MenuEntryCompare">harddisk_init</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Initializing storage usb device here." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="MenuEntryCompare">usbdisk_init</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="FixedLabel" text="You can check your device here." position="610,474" zPosition="1" size="360,130" font="Regular;22" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">

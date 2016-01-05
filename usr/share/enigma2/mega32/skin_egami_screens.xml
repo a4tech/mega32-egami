@@ -429,8 +429,8 @@
 	<!--  EGAMI Weather Plugin Search OKK -->
 	<screen name="MSNWeatherPluginSearch" position="0,0" size="1280,720" title="AccuWeather - foreca.com" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
-		<panel name="2Buttons3"/>
-		<widget name="entrylist" position="60,140" size="520,550" scrollbarMode="showOnDemand" itemHeight="30" transparent="1"/>
+		<panel name="2Buttons4"/>
+		<widget name="entrylist" position="60,140" size="520,550" scrollbarMode="showOnDemand" itemHeight="50" transparent="1"/>
 		<ePixmap pixmap="mega32/menu/ico_setup.png" position="920,435" size="256,256" zPosition="2" alphatest="blend"/>
 		<!-- eLabel name="DEBUG"  text="PANEL E037" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 		</screen>

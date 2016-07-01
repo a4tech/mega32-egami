@@ -16,6 +16,7 @@
  			}
  			</convert>
  		</widget>
+		<panel name="4Buttons2"/>
 		<!-- eLabel name="DEBUG"  text="PANEL T001" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 

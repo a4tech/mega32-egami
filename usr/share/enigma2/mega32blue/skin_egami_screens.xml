@@ -316,15 +316,6 @@
  		<!-- eLabel name="DEBUG"  text="PANEL E028" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!--  EGAMI EGS NetBrowser OKK -->
-	<screen name="EGSwapManager" position="fill" title="EGAMI Swap File Manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="GenericLayoutFullTemplateW"/>
-		<panel name="4Buttons"/>
-		<widget name="config" position="60,100" size="730,180" scrollbarMode="showOnDemand" backgroundColor="#101010" transparent="1"/>
-		<widget name="state"  position="70,320" size="730,80" font="Regular;22" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white"/>
- 		<!-- eLabel name="DEBUG"  text="PANEL E029" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-
 	<!--  EGAMI EGS Script OKK -->
 	<screen name="EGScript" position="fill" title="EGAMI Script Tool" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplate"/>
@@ -663,6 +654,15 @@
 	 <!-- eLabel name="DEBUG" text="PANEL P056" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
+	<!-- EgamiSwap OKK -->
+	<screen name="EGAMISwap" position="0,0" size="1280,720" backgroundColor="transparent" title="EGAMI Swap" flags="wfNoBorder">
+		<ePixmap pixmap="mega32/menu/ico_egami.png" position="1010,490" size="256,256" zPosition="2" alphatest="blend"/>
+		<panel name="GenericLayoutFullTemplate"/>
+		<panel name="3ButtonsW"/>
+		<widget name="lab1" position="60,90" font="Regular;24" zPosition="2" backgroundColor="transpBlack" transparent="1" size="520,210"/>
+		<!-- eLabel name="DEBUG" text="PANEL P055" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
 	<!-- EgamiXBMCMeteoMain OKK -->
 	<screen name="XBMCMeteoMain" position="center,center" size="1280,720" title="Weather" flags="wfNoBorder">
 		<ePixmap position="0,0" size="1280,720" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/100.png"/>

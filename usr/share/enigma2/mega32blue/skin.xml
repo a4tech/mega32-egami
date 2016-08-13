@@ -1240,8 +1240,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="mega32/buttons/1colors.png" position="50,659" size="1200,50" zPosition="4" alphatest="blend" transparent="1"/>
-		<eLabel text="Return" position="100,668" zPosition="4" size="210,21" font="Regular;19" halign="left" backgroundColor="black" transparent="1"/>
+		<panel name="4ButtonsW"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S051" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 

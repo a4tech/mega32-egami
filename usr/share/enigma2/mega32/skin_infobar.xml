@@ -200,7 +200,7 @@
 from enigma import ePoint
 from Components.config import config
 self.onAnimationEnd = []
-if config.misc.enableAnimationAddInfobar.value:
+if config.misc.enableAnimationInfobar.value:
 	start_x = config.usage.addedinfobar_offposition_x.value
 	start_y = 320
 	end_x = config.usage.addedinfobar_standartposition_x.value
@@ -213,7 +213,7 @@ else:
 		</applet>
 		<applet type="onHide">
 from enigma import ePoint
-if config.misc.enableAnimationAddInfobar.value:
+if config.misc.enableAnimationInfobar.value:
 	self.onAnimationEnd.append(self.instance.hide)
 	self.onAnimationEnd.append(self.restoreAlpha)
 	start_x = config.usage.addedinfobar_standartposition_x.value
@@ -282,7 +282,7 @@ if config.misc.enableAnimationAddInfobar.value:
 from enigma import ePoint
 from Components.config import config
 self.onAnimationEnd = []
-if config.misc.enableAnimationAddInfobar.value:
+if config.misc.enableAnimationInfobar.value:
 	start_x = config.usage.addedinfobar_offposition_x.value
 	start_y = 720
 	end_x = config.usage.addedinfobar_standartposition_x.value
@@ -295,7 +295,7 @@ else:
 		</applet>
 		<applet type="onHide">
 from enigma import ePoint
-if config.misc.enableAnimationAddInfobar.value:
+if config.misc.enableAnimationInfobar.value:
 	self.onAnimationEnd.append(self.instance.hide)
 	self.onAnimationEnd.append(self.restoreAlpha)
 	start_x = config.usage.addedinfobar_standartposition_x.value
@@ -440,5 +440,32 @@ if config.misc.enableAnimationAddInfobar.value:
 		<widget position="580,868" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 		<widget position="820,868" size="210,21" name="key_blue"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S13a" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<applet type="onShow">
+from enigma import ePoint
+from Components.config import config
+self.onAnimationEnd = []
+if config.misc.enableAnimationInfobarMovie.value:
+	start_x = config.usage.addedinfobar_offposition_x.value
+	start_y = 320
+	end_x = config.usage.addedinfobar_standartposition_x.value
+	end_y = 0
+	self.instance.startMoveAnimation(ePoint(start_x,start_y), ePoint(end_x,end_y), -9, 1, 10)
+else:
+	x = config.usage.addedinfobar_standartposition_x.value
+	y = config.usage.addedinfobar_standartposition_y.value
+	self.instance.move(ePoint(x,y))
+		</applet>
+		<applet type="onHide">
+from enigma import ePoint
+if config.misc.enableAnimationInfobarMovie.value:
+	self.onAnimationEnd.append(self.instance.hide)
+	self.onAnimationEnd.append(self.restoreAlpha)
+	start_x = config.usage.addedinfobar_standartposition_x.value
+	start_y = 0
+	end_x = config.usage.addedinfobar_offposition_x.value
+	end_y = 320
+	self.instance.startMoveAnimation(ePoint(start_x,start_y), ePoint(end_x,end_y), -9, 1, 10)
+	self.shown = False
+		</applet>
  	</screen>	
 </skin>

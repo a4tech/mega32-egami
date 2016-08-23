@@ -196,7 +196,7 @@
 			<convert type="ConditionalShowHide">Blink</convert> 
 		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL I001" position="40,100" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-		<applet type="onShow">
+		<!--<applet type="onShow">
 from enigma import ePoint
 from Components.config import config
 self.onAnimationEnd = []
@@ -222,7 +222,7 @@ if config.misc.enableAnimationInfobar.value:
 	end_y = 320
 	self.instance.startMoveAnimation(ePoint(start_x,start_y), ePoint(end_x,end_y), -9, 1, 10)
 	self.shown = False
-		</applet>
+		</applet>-->
 	</screen>
 	
 	<!-- Second INFOBAR -->
@@ -278,7 +278,7 @@ if config.misc.enableAnimationInfobar.value:
 		<panel name="SecondInfoBarNow"/>
 		<panel name="SecondInfoBarNext"/>
 		<panel name="weatPanel"/>
-		<applet type="onShow">
+	<!--	<applet type="onShow">
 from enigma import ePoint
 from Components.config import config
 self.onAnimationEnd = []
@@ -304,7 +304,7 @@ if config.misc.enableAnimationInfobar.value:
 	end_y = 720
 	self.instance.startMoveAnimation(ePoint(start_x,start_y), ePoint(end_x,end_y), -9, 1, 10)
 	self.shown = False
-		</applet>
+		</applet>-->
 		<!-- eLabel name="DEBUG"  text="PANEL I002" position="40,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -440,7 +440,7 @@ if config.misc.enableAnimationInfobar.value:
 		<widget position="580,868" size="210,21" name="key_yellow" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 		<widget position="820,868" size="210,21" name="key_blue"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL S13a" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-		<applet type="onShow">
+		<!--<applet type="onShow">
 from enigma import ePoint
 from Components.config import config
 self.onAnimationEnd = []
@@ -466,6 +466,6 @@ if config.misc.enableAnimationInfobarMovie.value:
 	end_y = 320
 	self.instance.startMoveAnimation(ePoint(start_x,start_y), ePoint(end_x,end_y), -9, 1, 10)
 	self.shown = False
-		</applet>
+		</applet>-->
  	</screen>	
 </skin>

@@ -2512,13 +2512,13 @@
 	</screen>
 	
 	<screen name="Animmain" position="center,center" size="1280,720" title="Mainmenu" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="title" position="423,555" size="500,40" zPosition="3" halign="center" valign="top" foregroundColor="bluette" backgroundColor="black" font="Regular;35" transparent="1" />
-		<ePixmap position="center,530" zPosition="-2" size="1280,160" pixmap="mega32blue/menu/infobarb.png" />
-		<widget source="label1" render="Label" position="90,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
-		<widget source="label2" render="Label" position="310,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
-		<widget source="label3" render="Label" position="530,580" size="220,100" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
-		<widget source="label4" render="Label" position="750,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
-		<widget source="label5" render="Label" position="970,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget name="title" position="center,555" size="1280,40" zPosition="3" halign="center" valign="top" foregroundColor="bluette" backgroundColor="black" font="Regular;35" transparent="1" />
+		<ePixmap position="center,530" zPosition="-2" size="1280,214" pixmap="mega32/menu/infobarmenu.png" />
+		<widget source="label1" render="Label" position="90,600" size="220,100" font="Regular;26" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label2" render="Label" position="310,600" size="220,100" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label3" render="Label" position="530,600" size="220,100" font="Regular;34" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label4" render="Label" position="750,600" size="220,100" font="Regular;26" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label5" render="Label" position="970,600" size="220,100" font="Regular;26" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
 	</screen>
 
 	<!-- Message Box -->

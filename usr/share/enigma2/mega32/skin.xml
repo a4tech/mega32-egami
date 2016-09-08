@@ -198,11 +198,11 @@
 	</screen>
 
 	<!-- Restart Panel OKK -->
-  <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
-    <ePixmap pixmap="mega32/megab.png" position="0,0" size="1280,720" zPosition="1"/>
+	<screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
+		<ePixmap pixmap="mega32/megab.png" position="0,0" size="1280,720" zPosition="1"/>
 		<widget name="text" position="280,652" size="900,100" zPosition="2" font="Regular1;27" halign="left" foregroundColor="dddddd" backgroundColor="black" shadowColor="black" shadowOffset="1,1" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="PANEL SP02" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-  </screen>
+	</screen>
 
 	<!-- Subservices Quickzap OKK -->
 	<screen name="SubservicesQuickzap" position="380,600" size="560,100" title="SubServices QuickZap" backgroundColor="transparent" flags="wfNoBorder">
@@ -2511,6 +2511,16 @@
 		</widget>
 	</screen>
 
+	<screen name="Animmain" position="center,center" size="1280,720" title="Mainmenu" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="title" position="423,555" size="500,40" zPosition="3" halign="center" valign="top" foregroundColor="bluette" backgroundColor="black" font="Regular;35" transparent="1" />
+		<ePixmap position="center,530" zPosition="-2" size="1280,160" pixmap="mega32/menu/infobarb.png" />
+		<widget source="label1" render="Label" position="90,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label2" render="Label" position="310,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label3" render="Label" position="530,580" size="220,100" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label4" render="Label" position="750,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+		<widget source="label5" render="Label" position="970,580" size="220,100" font="Regular;22" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
+	</screen>
+	
 	<!-- Message Box -->
 	<screen name="MessageBox" position="340,250" size="740,10" title="Message">
 		<widget name="text" position="65,15" size="520,0" font="Regular;22" transparent="1"/>
@@ -2544,7 +2554,7 @@ self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+#self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 	</screen>
 

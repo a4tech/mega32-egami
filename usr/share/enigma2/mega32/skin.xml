@@ -128,7 +128,29 @@
 		<widget source="label4" render="Label" position="750,600" size="220,100" font="Regular;26" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
 		<widget source="label5" render="Label" position="970,600" size="220,100" font="Regular;26" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="grey" backgroundColor="grey" transparent="1" />
 	</screen>
-
+	<screen name="Iconmain" position="center,center" size="1280,720" title="Mainmenu" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap position="17,530" zPosition="-2" size="1250,60" pixmap="mega32/menu/qw.png" />
+		<widget name="title" position="15,545" size="1250,40" zPosition="3" halign="center" valign="top" foregroundColor="bluette" backgroundColor="black" font="Regular;26" transparent="1" />
+		<widget name="pointer" position="610,585" size="100,150" zPosition="2" alphatest="on" />
+		<widget source="label1" render="Label" position="42,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label1s" render="Label" position="42,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap1" position="40,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label2" render="Label" position="242,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label2s" render="Label" position="242,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap2" position="240,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label3" render="Label" position="442,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label3s" render="Label" position="442,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap3" position="440,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label4" render="Label" position="642,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label4s" render="Label" position="642,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap4" position="640,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label5" render="Label" position="842,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label5s" render="Label" position="842,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap5" position="840,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label6" render="Label" position="1042,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="white" transparent="1" />
+		<widget source="label6s" render="Label" position="1042,600" size="180,100" font="Regular;20" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="red" backgroundColor="red" transparent="1" />
+		<widget name="pixmap6" position="1040,595" size="200,100" zPosition="1" transparent="1" alphatest="on" />
+	</screen>
 	<!-- Subtitle effects OKK -->
 	<subtitles>
 		<sub name="Subtitle_Regular" font="Regular;30"     foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3"/>
